@@ -10,12 +10,13 @@
     "apiKey" : "34wq2Iid",
     "projetId" : 3367
   },
-  "numFound" : 6,
+  "numFound" : 1,
   "objetsTouristiques" : [ {
     "type" : "FETE_ET_MANIFESTATION",
     "id" : 323154,
     "nom" : {
-      "libelleFr" : "Cols Réservés 2019 : Montée de Chabre (Laragne)"
+      "libelleFr" : "Cols Réservés 2019 : Montée de Chabre (Laragne)",
+      "libelleEn" : "Nom EN"
     },
     "gestion" : {
       "dateModification" : "2018-11-30T08:42:14.436+0000",
@@ -127,10 +128,13 @@
     },
     "presentation" : {
       "descriptifCourt" : {
-        "libelleFr" : "Une des ascensions mythiques du sud des Hautes Alpes ! La Montée de Chabre est réservée aux amoureux de la \"petite reine\", c'est gratuit, sans inscription, ouvert à tous et le ravitaillement est offert !"
+        "libelleFr" : "Une des ascensions mythiques du sud des Hautes Alpes ! La Montée de Chabre est réservée aux amoureux de la \"petite reine\", c'est gratuit, sans inscription, ouvert à tous et le ravitaillement est offert !",
+        "libelleEn" : "Descriptif Court EN"
+
       },
       "descriptifDetaille" : {
-        "libelleFr" : "Le département des Hautes-Alpes ferme la circulation de 10 grands cols aux véhicules motorisés pour les réserver aux cyclistes. Lors de l’événement \"Cols Réservés\", deux semaines leur sont dédiées.\r\n\r\nCap au sud du département à la découverte des cols insoupçonnés (mais costauds !). Les cyclistes découvrent des boucles moins renommées mais tout aussi séduisantes. Venez profiter de la Montée de Chabre qui sera réservée aux cyclistes de 9h à 12h à partir de l'embranchement de la route de Pomet."
+        "libelleFr" : "Le département des Hautes-Alpes ferme la circulation de 10 grands cols aux véhicules motorisés pour les réserver aux cyclistes. Lors de l’événement \"Cols Réservés\", deux semaines leur sont dédiées.\r\n\r\nCap au sud du département à la découverte des cols insoupçonnés (mais costauds !). Les cyclistes découvrent des boucles moins renommées mais tout aussi séduisantes. Venez profiter de la Montée de Chabre qui sera réservée aux cyclistes de 9h à 12h à partir de l'embranchement de la route de Pomet.",
+        "libelleEn" : "Descriptif Detaillé EN"
       }
     },
     "localisation" : {
