@@ -16,7 +16,7 @@
     "id" : 479743,
     "nom" : {
       "libelleFr" : "Quey' Raft",
-      "libelleEn" : "Test"
+      "libelleEs" : "Test"
     },
     "gestion" : {
       "dateModification" : "2017-11-24T15:52:27.974+0000",
@@ -63,11 +63,11 @@
     "presentation" : {
       "descriptifCourt" : {
         "libelleFr" : "Des descentes familiales ou plus sportives l'été, un parcours plus engagé au printemps...",
-        "libelleEn" : "Family or sporting descents in the summer, a more committed course in spring ..."
+        "libelleEs" : "Descriptif Court"
       },
       "descriptifDetaille" : {
         "libelleFr": "Au pied du château médiéval, l'enchaînement de rapides variés sur 25 km dans les gorges font du Guil une des rivières les plus appréciées dans le monde de l'eau vive.\r\nLes sensations et les émotions sont multiples.",
-        "libelleEn": "At the foot of the medieval castle, the succession of rapids over 25 km in the gorges make the Guil one of the most popular rivers in the world of white water. \\ R \\ nThe sensations and emotions are multiple."
+        "libelleEs": "Descriptif Détaillé"
       }
     },
     "localisation" : {
