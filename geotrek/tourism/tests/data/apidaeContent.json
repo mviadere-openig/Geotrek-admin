@@ -101,21 +101,25 @@
         "elementReferenceType" : "Testserv",
         "id" : 1300,
         "libelleFr" : "Test",
+        "libelleEn" : "Test EN",
         "ordre" : 9
       }, {
         "elementReferenceType" : "Testserv",
         "id" : 1301,
         "libelleFr" : "Test2",
+        "libelleEn" : "Test2 EN",
         "ordre" : 14
       }, {
         "elementReferenceType" : "Testserv",
         "id" : 1302,
         "libelleFr" : "Test3",
+        "libelleEn" : "Test3 EN",
         "ordre" : 18
       }, {
         "elementReferenceType" : "Testserv",
         "id" : 1303,
         "libelleFr" : "Test4",
+        "libelleEn" : "Test4 EN",
         "ordre" : 4
       } ]
     },
