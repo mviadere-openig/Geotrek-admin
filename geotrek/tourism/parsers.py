@@ -137,13 +137,13 @@ class ApidaeParser(AttachmentParserMixin, Parser):
             if 'libelle' in value:
                 key_without_tra = key[:-3]
                 for lang in settings.MODELTRANSLATION_LANGUAGES:
-                    new_key = '%s_%s' % (key_without_tra, lang)
+                    new_key = key_without_tra + '_%s' % lang
                     if new_key in fields_model:
                         self.fields[new_key] = value[:-2].replace('libelle', 'libelle%s' % lang.title())
             if hasattr(value, '__iter__'):
                 key_without_tra = key[:-3]
                 for lang in settings.MODELTRANSLATION_LANGUAGES:
-                    new_key = '%s_%s' % (key_without_tra, lang)
+                    new_key = key_without_tra + '_%s' % lang
                     if new_key in fields_model:
                         new_value = [value_list if 'libelle' not in value_list
                                      else value_list[:-2].replace('libelle', 'libelle%s' % lang.title())
@@ -240,16 +240,10 @@ class TouristicEventApidaeParser(ApidaeParser):
         if self.portal is not None:
             self.m2m_constant_fields['portal'] = self.portal
 
-    def filter_description_teaser_fr(self, src, val):
+    def filter_description_teaser(self, src, val):
         return '<br>'.join(val.splitlines())
 
-    def filter_description_fr(self, src, val):
-        return '<br>'.join(val.splitlines())
-
-    def filter_description_teaser_en(self, src, val):
-        return '<br>'.join(val.splitlines())
-
-    def filter_description_en(self, src, val):
+    def filter_description(self, src, val):
         return '<br>'.join(val.splitlines())
 
     def filter_duration(self, src, val):
@@ -292,9 +286,9 @@ class TouristicEventApidaeParser(ApidaeParser):
         if paiement and any(values.get('libelleFr') for values in paiement):
             paiement = "<b>Modes de paiement:</b><br>" + ", ".join([i['libelleFr'] for i in paiement]) + "<br>"
         if services and any(values.get('libelleFr') for values in services):
-            services = u"<b>Services:</b><br>" + ", ".join([i['libelleFr'] for i in services]) + u"<br>"
+            services = "<b>Services:</b><br>" + ", ".join([i['libelleFr'] for i in services]) + "<br>"
         if langues and any(values.get('libelleFr') for values in langues):
-            langues = u"<b>Langues Parlés:</b><br>" + ", ".join([i['libelleFr'] for i in langues]) + u"<br>"
+            langues = "<b>Langues Parlés:</b><br>" + ", ".join([i['libelleFr'] for i in langues]) + "<br>"
         if localisation:
             localisation = "<b>Accès:</b><br>" + "<br>".join(localisation.splitlines()) + "<br>"
         datemodif = datetime.datetime.strptime(datemodif[:10], "%Y-%m-%d").strftime("%d/%m/%Y")
@@ -328,14 +322,9 @@ class TouristicEventApidaeParser(ApidaeParser):
         else:
             services = ""
         if langues and any(values.get('libelleEn') for values in langues):
-<<<<<<< HEAD
             langues = "<b>Langues Parlés:</b><br>" + ", ".join([i['libelleEn'] for i in langues]) + "<br>"
-        else: langues = ""
-=======
-            langues = u"<b>Langues Parlés:</b><br>" + ", ".join([i['libelleEn'] for i in langues]) + u"<br>"
         else:
-            langues = u""
->>>>>>> Fix pep8
+            langues = ""
         if localisation:
             localisation = "<b>Accès:</b><br>" + "<br>".join(localisation.splitlines()) + "<br>"
         datemodif = datetime.datetime.strptime(datemodif[:10], "%Y-%m-%d").strftime("%d/%m/%Y")
