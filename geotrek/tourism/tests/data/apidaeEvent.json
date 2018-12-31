@@ -165,11 +165,13 @@
         "elementReferenceType" : "PrestationService",
         "id" : 687,
         "libelleFr" : "Le plus grand des services",
+        "libelleEn" : "English Service",
         "ordre" : 271
       }, {
         "elementReferenceType" : "PrestationService",
         "id" : 687,
         "libelleFr" : "Un autre grand service",
+        "libelleEn" : "Other Service",
         "ordre" : 271
       }],
       "animauxAcceptes" : "NON_DISPONIBLE",
@@ -177,7 +179,8 @@
     },
     "ouverture" : {
       "periodeEnClair" : {
-        "libelleFr" : "Mardi 6 août 2019 de 9h à midi."
+        "libelleFr" : "Mardi 6 août 2019 de 9h à midi.",
+        "libelleEn" : "Tuesday, August 6, 2019 from 9am to noon."
       },
       "periodesOuvertures" : [ {
         "identifiant" : 10270496,
