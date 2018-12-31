@@ -175,7 +175,11 @@
         "ordre" : 271
       }],
       "animauxAcceptes" : "NON_DISPONIBLE",
-      "animauxAcceptesSupplement" : "NON_DISPONIBLE"
+      "animauxAcceptesSupplement" : "NON_DISPONIBLE",
+      "languesParlees" : [ {
+        "libelleFr" : "Français",
+        "libelleEn" : "French"
+      }]
     },
     "ouverture" : {
       "periodeEnClair" : {
@@ -195,8 +199,34 @@
     },
     "descriptionTarif" : {
       "tarifsEnClair" : {
-        "libelleFr" : "Gratuit."
-      }
+        "libelleFr" : "Gratuit.",
+        "libelleEn" : "Free."
+      },
+      "modesPaiement" : [ {
+        "elementReferenceType" : "ModePaiement",
+        "id" : 1271,
+        "libelleFr" : "Chèque",
+        "libelleEn" : "Chèque",
+        "ordre" : 9
+      }, {
+        "elementReferenceType" : "ModePaiement",
+        "id" : 1274,
+        "libelleFr" : "Chèque Vacances",
+        "libelleEn" : "Holiday Vouchers",
+        "ordre" : 14
+      }, {
+        "elementReferenceType" : "ModePaiement",
+        "id" : 1277,
+        "libelleFr" : "Espèces",
+        "libelleEn" : "Cash",
+        "ordre" : 18
+      }, {
+        "elementReferenceType" : "ModePaiement",
+        "id" : 1268,
+        "libelleFr" : "Carte bancaire/crédit",
+        "libelleEn" : "Credit Card",
+        "ordre" : 4
+      } ]
     },
     "illustrations" : [ {
       "identifiant" : 4480274,
@@ -275,7 +305,8 @@
       "locked" : false
     } ],
     "informationsFeteEtManifestation" : {
-      "nomLie" : "Embranchement de la route de Pomet",
+      "nomLieu" : "Embranchement de la route de Pomet",
+      "nbParticipantsAttendu": "100",
       "typesManifestation" : [ {
         "elementReferenceType" : "FeteEtManifestationType",
         "id" : 1971,
