@@ -288,7 +288,7 @@ class TouristicEventApidaeParser(ApidaeParser):
         if services and any(values.get('libelleFr') for values in services):
             services = "<b>Services:</b><br>" + ", ".join([i['libelleFr'] for i in services]) + "<br>"
         if langues and any(values.get('libelleFr') for values in langues):
-            langues = "<b>Langues Parlés:</b><br>" + ", ".join([i['libelleFr'] for i in langues]) + "<br>"
+            langues = "<b>Langues Parlées:</b><br>" + ", ".join([i['libelleFr'] for i in langues]) + "<br>"
         if localisation:
             localisation = "<b>Accès:</b><br>" + "<br>".join(localisation.splitlines()) + "<br>"
         datemodif = datetime.datetime.strptime(datemodif[:10], "%Y-%m-%d").strftime("%d/%m/%Y")
