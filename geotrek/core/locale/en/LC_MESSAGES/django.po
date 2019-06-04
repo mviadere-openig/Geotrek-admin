@@ -3,259 +3,258 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-23 16:01+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-06-05 15:54+0200\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.1\n"
 
 msgid "Core"
-msgstr ""
+msgstr "Core"
 
 msgid "Topology is empty."
-msgstr ""
+msgstr "Topology is empty."
 
 msgid "Topology is not valid."
-msgstr ""
+msgstr "Topology is not valid."
 
 #, python-format
 msgid "Topology %s does not exist."
-msgstr ""
+msgstr "Topology %s does not exist."
 
 msgid "Linestring invalid snapping."
-msgstr ""
+msgstr "Linestring invalid snapping."
 
 msgid "length"
-msgstr ""
+msgstr "length"
 
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgid "Comments"
-msgstr ""
+msgstr "Comments"
 
 msgid "Departure"
-msgstr ""
+msgstr "Departure"
 
 msgid "Arrival"
-msgstr ""
+msgstr "Arrival"
 
 msgid "Trail"
-msgstr ""
+msgstr "Trail"
 
 msgid "Reverse path"
-msgstr ""
+msgstr "Reverse path"
 
 msgid "The path will be reversed once saved"
-msgstr ""
+msgstr "The path will be reversed once saved"
 
 msgid "Invalid snapped geometry."
-msgstr ""
+msgstr "Invalid snapped geometry."
 
 msgid "Geometry is not simple."
-msgstr ""
+msgstr "Geometry is not simple."
 
 msgid "Geometry overlaps another."
-msgstr ""
+msgstr "Geometry overlaps another."
 
 msgid "Validity"
-msgstr ""
+msgstr "Validity"
 
 msgid "Approved by manager"
-msgstr ""
+msgstr "Approved by manager"
 
 msgid "Visible"
-msgstr ""
+msgstr "Visible"
 
 msgid "Shown in lists and maps"
-msgstr ""
+msgstr "Shown in lists and maps"
 
 msgid "Official name"
-msgstr ""
+msgstr "Official name"
 
 msgid "Remarks"
-msgstr ""
+msgstr "Remarks"
 
 msgid "Departure place"
-msgstr ""
+msgstr "Departure place"
 
 msgid "Arrival place"
-msgstr ""
+msgstr "Arrival place"
 
 msgid "Comfort"
-msgstr ""
+msgstr "Comfort"
 
 msgid "Source"
-msgstr ""
+msgstr "Source"
 
 msgid "Maintenance stake"
-msgstr ""
+msgstr "Maintenance stake"
 
 msgid "Usages"
-msgstr ""
+msgstr "Usages"
 
 msgid "Networks"
-msgstr ""
+msgstr "Networks"
 
 msgid "External id"
-msgstr ""
+msgstr "External id"
 
 msgid "Draft"
-msgstr ""
+msgstr "Draft"
 
 msgid "2D Length"
-msgstr ""
+msgstr "2D Length"
 
 #, python-format
 msgid "path %d"
-msgstr ""
+msgstr "path %d"
 
 msgid "Path"
-msgstr ""
+msgstr "Path"
 
 msgid "Paths"
-msgstr ""
+msgstr "Paths"
 
 msgid "Trails"
-msgstr ""
+msgstr "Trails"
 
 msgid "None"
-msgstr ""
+msgstr "None"
 
 msgid "Add a new path"
-msgstr ""
+msgstr "Add a new path"
 
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 msgid "Kind"
-msgstr ""
+msgstr "Kind"
 
 msgid "Topology"
-msgstr ""
+msgstr "Topology"
 
 msgid "Topologies"
-msgstr ""
+msgstr "Topologies"
 
 msgid "Start position"
-msgstr ""
+msgstr "Start position"
 
 msgid "End position"
-msgstr ""
+msgstr "End position"
 
 msgid "Order"
-msgstr ""
+msgstr "Order"
 
 msgid "Path aggregation"
-msgstr ""
+msgstr "Path aggregation"
 
 msgid "Path aggregations"
-msgstr ""
+msgstr "Path aggregations"
 
 msgid "Path source"
-msgstr ""
+msgstr "Path source"
 
 msgid "Path sources"
-msgstr ""
+msgstr "Path sources"
 
 msgid "Stake"
-msgstr ""
+msgstr "Stake"
 
 msgid "Maintenance stakes"
-msgstr ""
+msgstr "Maintenance stakes"
 
 msgid "Comforts"
-msgstr ""
+msgstr "Comforts"
 
 msgid "Usage"
-msgstr ""
+msgstr "Usage"
 
 msgid "Network"
-msgstr ""
+msgstr "Network"
 
 msgid "Management"
-msgstr ""
+msgstr "Management"
 
 msgid "No information"
-msgstr ""
+msgstr "No information"
 
 msgid "Add a new trail"
-msgstr ""
+msgstr "Add a new trail"
 
 msgid "Different topologies are linked with this path"
-msgstr ""
+msgstr "Different topologies are linked with this path"
 
 msgid "Not validated"
-msgstr ""
+msgstr "Not validated"
 
 msgid "Attributes"
-msgstr ""
+msgstr "Attributes"
 
 msgid "Draft mode"
-msgstr ""
+msgstr "Draft mode"
 
 msgid "Select two paths to merge them"
-msgstr ""
+msgstr "Select two paths to merge them"
 
 msgid "Are you sure you want to merge these paths ?"
-msgstr ""
+msgstr "Are you sure you want to merge these paths ?"
 
 msgid "Unknown error"
-msgstr ""
+msgstr "Unknown error"
 
 msgid "Merge"
-msgstr ""
+msgstr "Merge"
 
 msgid "Merge paths"
-msgstr ""
+msgstr "Merge paths"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
-msgid ""
-"Access to the requested resource is restricted. You have been redirected."
-msgstr ""
+msgid "Access to the requested resource is restricted. You have been redirected."
+msgstr "Access to the requested resource is restricted. You have been redirected."
 
 msgid "Treks"
-msgstr ""
+msgstr "Treks"
 
 msgid "Services"
-msgstr ""
+msgstr "Services"
 
 msgid "Pois"
-msgstr ""
+msgstr "Pois"
 
 msgid "Signages"
-msgstr ""
+msgstr "Signages"
 
 msgid "Infrastructures"
-msgstr ""
+msgstr "Infrastructures"
 
 msgid "Interventions"
-msgstr ""
+msgstr "Interventions"
 
 msgid "You don't have the right to change these paths"
-msgstr ""
+msgstr "You don't have the right to change these paths"
 
 msgid "You can't merge 1 draft path with 1 normal path"
-msgstr ""
+msgstr "You can't merge 1 draft path with 1 normal path"
 
 msgid "You can't merge 2 paths with a 3rd path in the intersection"
-msgstr ""
+msgstr "You can't merge 2 paths with a 3rd path in the intersection"
 
 msgid "No matching points to merge paths found"
-msgstr ""
+msgstr "No matching points to merge paths found"
 
 msgid "Paths merged successfully"
-msgstr ""
+msgstr "Paths merged successfully"

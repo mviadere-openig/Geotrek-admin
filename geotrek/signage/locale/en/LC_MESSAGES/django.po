@@ -3,142 +3,142 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-16 09:02+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-06-05 15:58+0200\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.1\n"
 
 msgid "Intervention year"
-msgstr ""
+msgstr "Intervention year"
 
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 msgid "Implantation year"
-msgstr ""
+msgstr "Implantation year"
 
 msgid "Category"
-msgstr ""
+msgstr "Category"
 
 msgid "Signage Type"
-msgstr ""
+msgstr "Signage Type"
 
 msgid "Signage Types"
-msgstr ""
+msgstr "Signage Types"
 
 msgid "Reference, code, ..."
-msgstr ""
+msgstr "Reference, code, ..."
 
 msgid "Specificites"
-msgstr ""
+msgstr "Specificites"
 
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgid "Condition"
-msgstr ""
+msgstr "Condition"
 
 msgid "Cities"
-msgstr ""
+msgstr "Cities"
 
 msgid "Signages"
-msgstr ""
+msgstr "Signages"
 
 msgid "None"
-msgstr ""
+msgstr "None"
 
 msgid "Add a new signage"
-msgstr ""
+msgstr "Add a new signage"
 
 msgid "Sealing"
-msgstr ""
+msgstr "Sealing"
 
 msgid "Sealings"
-msgstr ""
+msgstr "Sealings"
 
 msgid "Signage"
-msgstr ""
+msgstr "Signage"
 
 msgid "Blades"
-msgstr ""
+msgstr "Blades"
 
 msgid "Blade"
-msgstr ""
+msgstr "Blade"
 
 msgid "Color"
-msgstr ""
+msgstr "Color"
 
 msgid "Blade Type"
-msgstr ""
+msgstr "Blade Type"
 
 msgid "Blade Types"
-msgstr ""
+msgstr "Blade Types"
 
 msgid "Color Blade"
-msgstr ""
+msgstr "Color Blade"
 
 msgid "Blade Colors "
-msgstr ""
+msgstr "Blade Colors "
 
 msgid "Direction"
-msgstr ""
+msgstr "Direction"
 
 msgid "Directions"
-msgstr ""
+msgstr "Directions"
 
 msgid "Blade Number"
-msgstr ""
+msgstr "Blade Number"
 
 msgid "Hours:Minutes:Seconds"
-msgstr ""
+msgstr "Hours:Minutes:Seconds"
 
 msgid "Pictogramm name"
-msgstr ""
+msgstr "Pictogramm name"
 
 msgid "Line"
-msgstr ""
+msgstr "Line"
 
 msgid "Lines"
-msgstr ""
+msgstr "Lines"
 
 msgid "Number already exists, numbers already used : %s"
-msgstr ""
+msgstr "Number already exists, numbers already used : %s"
 
 msgid "Time (Hours:Minutes:Seconds)"
-msgstr ""
+msgstr "Time (Hours:Minutes:Seconds)"
 
 msgid "Distance (km)"
-msgstr ""
+msgstr "Distance (km)"
 
 msgid "Add a line"
-msgstr ""
+msgstr "Add a line"
 
 msgid "Add a new blade"
-msgstr ""
+msgstr "Add a new blade"
 
 msgid "Printed elevation"
-msgstr ""
+msgstr "Printed elevation"
 
 msgid "Manager"
-msgstr ""
+msgstr "Manager"
 
 msgid "GPS coordinates"
-msgstr ""
+msgstr "GPS coordinates"
 
 msgid "Blade Color"
-msgstr ""
+msgstr "Blade Color"
 
 msgid "Blade Colors"
-msgstr ""
+msgstr "Blade Colors"

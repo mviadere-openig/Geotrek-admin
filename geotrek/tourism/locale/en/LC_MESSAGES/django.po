@@ -3,374 +3,374 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-16 09:02+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-06-05 15:56+0200\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.1\n"
 
 msgid "Tourism"
-msgstr ""
+msgstr "Tourism"
 
 msgid "After"
-msgstr ""
+msgstr "After"
 
 msgid "Before"
-msgstr ""
+msgstr "Before"
 
 msgid "Completed"
-msgstr ""
+msgstr "Completed"
 
 msgid "dd/mm/yyyy"
-msgstr ""
+msgstr "dd/mm/yyyy"
 
 msgid "HH:MM"
-msgstr ""
+msgstr "HH:MM"
 
 msgid "GeoJSON"
-msgstr ""
+msgstr "GeoJSON"
 
 msgid "TourInFrance"
-msgstr ""
+msgstr "TourInFrance"
 
 msgid "Apidae"
-msgstr ""
+msgstr "Apidae"
 
 msgid "Public website"
-msgstr ""
+msgstr "Public website"
 
 msgid "Label"
-msgstr ""
+msgstr "Label"
 
 msgid "Information desk type"
-msgstr ""
+msgstr "Information desk type"
 
 msgid "Information desk types"
-msgstr ""
+msgstr "Information desk types"
 
 msgid "Title"
-msgstr ""
+msgstr "Title"
 
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 msgid "Brief description"
-msgstr ""
+msgstr "Brief description"
 
 msgid "Phone"
-msgstr ""
+msgstr "Phone"
 
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 msgid "Website"
-msgstr ""
+msgstr "Website"
 
 msgid "Photo"
-msgstr ""
+msgstr "Photo"
 
 msgid "Street"
-msgstr ""
+msgstr "Street"
 
 msgid "Postal code"
-msgstr ""
+msgstr "Postal code"
 
 msgid "Municipality"
-msgstr ""
+msgstr "Municipality"
 
 msgid "Emplacement"
-msgstr ""
+msgstr "Emplacement"
 
 msgid "Information desk"
-msgstr ""
+msgstr "Information desk"
 
 msgid "Information desks"
-msgstr ""
+msgstr "Information desks"
 
 #, python-format
 msgid "Image %s invalid or missing from disk."
-msgstr ""
+msgstr "Image %s invalid or missing from disk."
 
 msgid "Point"
-msgstr ""
+msgstr "Point"
 
 msgid "Line"
-msgstr ""
+msgstr "Line"
 
 msgid "Polygon"
-msgstr ""
+msgstr "Polygon"
 
 msgid "Any"
-msgstr ""
+msgstr "Any"
 
 msgid "First list label"
-msgstr ""
+msgstr "First list label"
 
 msgid "Second list label"
-msgstr ""
+msgstr "Second list label"
 
 msgid "Order"
-msgstr ""
+msgstr "Order"
 
 msgid "Alphabetical order if blank"
-msgstr ""
+msgstr "Alphabetical order if blank"
 
 msgid "Touristic content category"
-msgstr ""
+msgstr "Touristic content category"
 
 msgid "Touristic content categories"
-msgstr ""
+msgstr "Touristic content categories"
 
 msgid "Category"
-msgstr ""
+msgstr "Category"
 
 msgid "First"
-msgstr ""
+msgstr "First"
 
 msgid "Second"
-msgstr ""
+msgstr "Second"
 
 msgid "Touristic content type"
-msgstr ""
+msgstr "Touristic content type"
 
 msgid "First list types"
-msgstr ""
+msgstr "First list types"
 
 msgid "Second list types"
-msgstr ""
+msgstr "Second list types"
 
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgid "Reservation system"
-msgstr ""
+msgstr "Reservation system"
 
 msgid "Reservation systems"
-msgstr ""
+msgstr "Reservation systems"
 
 msgid "Description teaser"
-msgstr ""
+msgstr "Description teaser"
 
 msgid "A brief summary"
-msgstr ""
+msgstr "A brief summary"
 
 msgid "Complete description"
-msgstr ""
+msgstr "Complete description"
 
 msgid "Themes"
-msgstr ""
+msgstr "Themes"
 
 msgid "Main theme(s)"
-msgstr ""
+msgstr "Main theme(s)"
 
 msgid "Location"
-msgstr ""
+msgstr "Location"
 
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
 msgid "Address, phone, etc."
-msgstr ""
+msgstr "Address, phone, etc."
 
 msgid "Practical info"
-msgstr ""
+msgstr "Practical info"
 
 msgid "Anything worth to know"
-msgstr ""
+msgstr "Anything worth to know"
 
 msgid "Type 1"
-msgstr ""
+msgstr "Type 1"
 
 msgid "Type 2"
-msgstr ""
+msgstr "Type 2"
 
 msgid "Source"
-msgstr ""
+msgstr "Source"
 
 msgid "Portal"
-msgstr ""
+msgstr "Portal"
 
 msgid "External id"
-msgstr ""
+msgstr "External id"
 
 msgid "Reservation ID"
-msgstr ""
+msgstr "Reservation ID"
 
 msgid "Approved"
-msgstr ""
+msgstr "Approved"
 
 msgid "Touristic content"
-msgstr ""
+msgstr "Touristic content"
 
 msgid "Touristic contents"
-msgstr ""
+msgstr "Touristic contents"
 
 msgid "Published touristic contents"
-msgstr ""
+msgstr "Published touristic contents"
 
 msgid "Touristic event type"
-msgstr ""
+msgstr "Touristic event type"
 
 msgid "Touristic event types"
-msgstr ""
+msgstr "Touristic event types"
 
 msgid "Begin date"
-msgstr ""
+msgstr "Begin date"
 
 msgid "End date"
-msgstr ""
+msgstr "End date"
 
 msgid "Duration"
-msgstr ""
+msgstr "Duration"
 
 msgid "3 days, season, ..."
-msgstr ""
+msgstr "3 days, season, ..."
 
 msgid "Meeting point"
-msgstr ""
+msgstr "Meeting point"
 
 msgid "Where exactly ?"
-msgstr ""
+msgstr "Where exactly ?"
 
 msgid "Meeting time"
-msgstr ""
+msgstr "Meeting time"
 
 msgid "11:00, 23:30"
-msgstr ""
+msgstr "11:00, 23:30"
 
 msgid "Organizer"
-msgstr ""
+msgstr "Organizer"
 
 msgid "Speaker"
-msgstr ""
+msgstr "Speaker"
 
 msgid "Accessibility"
-msgstr ""
+msgstr "Accessibility"
 
 msgid "Number of participants"
-msgstr ""
+msgstr "Number of participants"
 
 msgid "Booking"
-msgstr ""
+msgstr "Booking"
 
 msgid "Target audience"
-msgstr ""
+msgstr "Target audience"
 
 msgid "Recommandations / To plan / Advices"
-msgstr ""
+msgstr "Recommandations / To plan / Advices"
 
 msgid "Touristic event"
-msgstr ""
+msgstr "Touristic event"
 
 msgid "Touristic events"
-msgstr ""
+msgstr "Touristic events"
 
 #, python-brace-format
 msgid "starting from {begin}"
-msgstr ""
+msgstr "starting from {begin}"
 
 #, python-brace-format
 msgid "up to {end}"
-msgstr ""
+msgstr "up to {end}"
 
 #, python-brace-format
 msgid "from {begin} to {end}"
-msgstr ""
+msgstr "from {begin} to {end}"
 
 msgid "Published touristic events"
-msgstr ""
+msgstr "Published touristic events"
 
 #, python-brace-format
 msgid "Failed to download {url}. HTTP status code {status_code}"
-msgstr ""
+msgstr "Failed to download {url}. HTTP status code {status_code}"
 
 #, python-brace-format
 msgid "Type 1 '{subval}' does not exist for category '{cat}'. Please add it"
-msgstr ""
+msgstr "Type 1 '{subval}' does not exist for category '{cat}'. Please add it"
 
 #, python-brace-format
 msgid "Type 2 '{subval}' does not exist for category '{cat}'. Please add it"
-msgstr ""
+msgstr "Type 2 '{subval}' does not exist for category '{cat}'. Please add it"
 
 msgid "touristic-content"
-msgstr ""
+msgstr "touristic-content"
 
 msgid "touristic-event"
-msgstr ""
+msgstr "touristic-event"
 
 msgid "Add a new touristic content"
-msgstr ""
+msgstr "Add a new touristic content"
 
 msgid "Add a new touristic event"
-msgstr ""
+msgstr "Add a new touristic event"
 
 msgid "Data sources"
-msgstr ""
+msgstr "Data sources"
 
 msgid "No result"
-msgstr ""
+msgstr "No result"
 
 msgid "Choose value(s)"
-msgstr ""
+msgstr "Choose value(s)"
 
 msgid "Public print"
-msgstr ""
+msgstr "Public print"
 
 msgid "Print"
-msgstr ""
+msgstr "Print"
 
 msgid "Attributes"
-msgstr ""
+msgstr "Attributes"
 
 msgid "yes,no"
-msgstr ""
+msgstr "yes,no"
 
 msgid "Thumbnail"
-msgstr ""
+msgstr "Thumbnail"
 
 msgid "All"
-msgstr ""
+msgstr "All"
 
 msgid "Powered by geotrek.fr"
-msgstr ""
+msgstr "Powered by geotrek.fr"
 
 msgid "Attribution"
-msgstr ""
+msgstr "Attribution"
 
 msgid "Useful information"
-msgstr ""
+msgstr "Useful information"
 
 msgid "Geographical location"
-msgstr ""
+msgstr "Geographical location"
 
 msgid "All useful information"
-msgstr ""
+msgstr "All useful information"
 
 msgid "Advice"
-msgstr ""
+msgstr "Advice"
 
 msgid "Related Treks"
-msgstr ""
+msgstr "Related Treks"
 
 msgid "Powered by http://geotrek.fr"
-msgstr ""
+msgstr "Powered by http://geotrek.fr"
 
 msgid "None"
-msgstr ""
+msgstr "None"
 
 msgid "Date"
-msgstr ""
+msgstr "Date"
 
 msgid "Invalid geometry value."
-msgstr ""
+msgstr "Invalid geometry value."

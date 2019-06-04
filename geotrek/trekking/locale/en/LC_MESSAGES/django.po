@@ -3,581 +3,595 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-16 09:02+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-06-05 15:55+0200\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.1\n"
 
 #, python-format
 msgid "Difficulty with id '%s' already exists"
-msgstr ""
+msgstr "Difficulty with id '%s' already exists"
 
 #, python-brace-format
 msgid "Difficulty id {old} was changed to {new} successfully."
-msgstr ""
+msgstr "Difficulty id {old} was changed to {new} successfully."
 
 msgid "Practices"
-msgstr ""
+msgstr "Practices"
 
 msgid "Trekking"
-msgstr ""
+msgstr "Trekking"
 
 msgid "Trek"
-msgstr ""
+msgstr "Trek"
 
 msgid "Children"
-msgstr ""
+msgstr "Children"
 
 msgid "Select children in order"
-msgstr ""
+msgstr "Select children in order"
 
 msgid "Hidden ordered children"
-msgstr ""
+msgstr "Hidden ordered children"
 
 msgid "Main"
-msgstr ""
+msgstr "Main"
 
 msgid "Advanced"
-msgstr ""
+msgstr "Advanced"
 
 msgid "Related treks"
-msgstr ""
+msgstr "Related treks"
 
 msgid "Insert service:"
-msgstr ""
+msgstr "Insert service:"
 
 msgid "Cannot add children because this trek is itself a child."
-msgstr ""
+msgstr "Cannot add children because this trek is itself a child."
 
 #, python-brace-format
 msgid "Cannot use parent trek {name} as a child trek."
-msgstr ""
+msgstr "Cannot use parent trek {name} as a child trek."
 
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 msgid "Create"
-msgstr ""
+msgstr "Create"
 
 msgid "Launch Sync"
-msgstr ""
+msgstr "Launch Sync"
 
 msgid "Global tiles syncing ..."
-msgstr ""
+msgstr "Global tiles syncing ..."
 
 msgid "Trek tiles syncing ..."
-msgstr ""
+msgstr "Trek tiles syncing ..."
 
 msgid "Tiles synced ..."
-msgstr ""
+msgstr "Tiles synced ..."
 
 msgid "Language"
-msgstr ""
+msgstr "Language"
 
 msgid "Sync ended"
-msgstr ""
+msgstr "Sync ended"
 
 msgid "Departure"
-msgstr ""
+msgstr "Departure"
 
 msgid "Departure description"
-msgstr ""
+msgstr "Departure description"
 
 msgid "Arrival"
-msgstr ""
+msgstr "Arrival"
 
 msgid "Arrival description"
-msgstr ""
+msgstr "Arrival description"
 
 msgid "Description teaser"
-msgstr ""
+msgstr "Description teaser"
 
 msgid "A brief summary (map pop-ups)"
-msgstr ""
+msgstr "A brief summary (map pop-ups)"
 
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 msgid "Complete description"
-msgstr ""
+msgstr "Complete description"
 
 msgid "Ambiance"
-msgstr ""
+msgstr "Ambiance"
 
 msgid "Main attraction and interest"
-msgstr ""
+msgstr "Main attraction and interest"
 
 msgid "Access"
-msgstr ""
+msgstr "Access"
 
 msgid "Best way to go"
-msgstr ""
+msgstr "Best way to go"
 
 msgid "Disabled infrastructure"
-msgstr ""
+msgstr "Disabled infrastructure"
 
 msgid "Any specific infrastructure"
-msgstr ""
+msgstr "Any specific infrastructure"
 
 msgid "Duration"
-msgstr ""
+msgstr "Duration"
 
 msgid "In hours (1.5 = 1 h 30, 24 = 1 day, 48 = 2 days)"
-msgstr ""
+msgstr "In hours (1.5 = 1 h 30, 24 = 1 day, 48 = 2 days)"
 
 msgid "Is in the midst of the park"
-msgstr ""
+msgstr "Is in the midst of the park"
 
 msgid "Crosses center of park"
-msgstr ""
+msgstr "Crosses center of park"
 
 msgid "Advised parking"
-msgstr ""
+msgstr "Advised parking"
 
 msgid "Where to park"
-msgstr ""
+msgstr "Where to park"
 
 msgid "Parking location"
-msgstr ""
+msgstr "Parking location"
 
 msgid "Public transport"
-msgstr ""
+msgstr "Public transport"
 
 msgid "Train, bus (see web links)"
-msgstr ""
+msgstr "Train, bus (see web links)"
 
 msgid "Advice"
-msgstr ""
+msgstr "Advice"
 
 msgid "Risks, danger, best period, ..."
-msgstr ""
+msgstr "Risks, danger, best period, ..."
 
 msgid "Themes"
-msgstr ""
+msgstr "Themes"
 
 msgid "Main theme(s)"
-msgstr ""
+msgstr "Main theme(s)"
 
 msgid "Networks"
-msgstr ""
+msgstr "Networks"
 
 msgid "Hiking networks"
-msgstr ""
+msgstr "Hiking networks"
 
 msgid "Practice"
-msgstr ""
+msgstr "Practice"
 
 msgid "Accessibility"
-msgstr ""
+msgstr "Accessibility"
 
 msgid "Route"
-msgstr ""
+msgstr "Route"
 
 msgid "Difficulty"
-msgstr ""
+msgstr "Difficulty"
 
 msgid "Web links"
-msgstr ""
+msgstr "Web links"
 
 msgid "External resources"
-msgstr ""
+msgstr "External resources"
 
 msgid "Connections between treks"
-msgstr ""
+msgstr "Connections between treks"
 
 msgid "Information desks"
-msgstr ""
+msgstr "Information desks"
 
 msgid "Where to obtain information"
-msgstr ""
+msgstr "Where to obtain information"
 
 msgid "Points of reference"
-msgstr ""
+msgstr "Points of reference"
 
 msgid "Source"
-msgstr ""
+msgstr "Source"
 
 msgid "Portal"
-msgstr ""
+msgstr "Portal"
 
 msgid "External id"
-msgstr ""
+msgstr "External id"
 
 msgid "Second external id"
-msgstr ""
+msgstr "Second external id"
 
 msgid "Treks"
-msgstr ""
+msgstr "Treks"
 
 msgid "Formated duration"
-msgstr ""
+msgstr "Formated duration"
 
 msgid "Add a new trek"
-msgstr ""
+msgstr "Add a new trek"
 
 msgid "Cannot use itself as child trek."
-msgstr ""
+msgstr "Cannot use itself as child trek."
 
 msgid "Published treks"
-msgstr ""
+msgstr "Published treks"
 
 msgid "Common departure"
-msgstr ""
+msgstr "Common departure"
 
 msgid "Common edge"
-msgstr ""
+msgstr "Common edge"
 
 msgid "Circuit step"
-msgstr ""
+msgstr "Circuit step"
 
 msgid "Trek relationship"
-msgstr ""
+msgstr "Trek relationship"
 
 msgid "Trek relationships"
-msgstr ""
+msgstr "Trek relationships"
 
 msgid "Path"
-msgstr ""
+msgstr "Path"
 
 msgid "Circuit"
-msgstr ""
+msgstr "Circuit"
 
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgid "Trek network"
-msgstr ""
+msgstr "Trek network"
 
 msgid "Trek networks"
-msgstr ""
+msgstr "Trek networks"
 
 msgid "Distance"
-msgstr ""
+msgstr "Distance"
 
 msgid ""
 "Touristic contents and events will associate within this distance (meters)"
 msgstr ""
+"Touristic contents and events will associate within this distance (meters)"
 
 msgid "Cirkwi locomotion"
-msgstr ""
+msgstr "Cirkwi locomotion"
 
 msgid "Order"
-msgstr ""
+msgstr "Order"
 
 msgid "Alphabetical order if blank"
-msgstr ""
+msgstr "Alphabetical order if blank"
 
 msgid "Cirkwi tag"
-msgstr ""
+msgstr "Cirkwi tag"
 
 msgid "Accessibilities"
-msgstr ""
+msgstr "Accessibilities"
 
 msgid "Routes"
-msgstr ""
+msgstr "Routes"
 
 msgid "Difficulty level"
-msgstr ""
+msgstr "Difficulty level"
 
 msgid "Cirkwi level"
-msgstr ""
+msgstr "Cirkwi level"
 
 msgid "Between 1 and 8"
-msgstr ""
+msgstr "Between 1 and 8"
 
 msgid "Difficulty levels"
-msgstr ""
+msgstr "Difficulty levels"
 
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 msgid "Category"
-msgstr ""
+msgstr "Category"
 
 msgid "Web link"
-msgstr ""
+msgstr "Web link"
 
 msgid "Label"
-msgstr ""
+msgstr "Label"
 
 msgid "Web link category"
-msgstr ""
+msgstr "Web link category"
 
 msgid "Web link categories"
-msgstr ""
+msgstr "Web link categories"
 
 msgid "History, details,  ..."
-msgstr ""
+msgstr "History, details,  ..."
 
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgid "POI"
-msgstr ""
+msgstr "POI"
 
 msgid "POIs"
-msgstr ""
+msgstr "POIs"
 
 msgid "Published POIs"
-msgstr ""
+msgstr "Published POIs"
 
 msgid "Cirkwi POI category"
-msgstr ""
+msgstr "Cirkwi POI category"
 
 msgid "POI type"
-msgstr ""
+msgstr "POI type"
 
 msgid "POI types"
-msgstr ""
+msgstr "POI types"
 
 msgid "Service type"
-msgstr ""
+msgstr "Service type"
 
 msgid "Service types"
-msgstr ""
+msgstr "Service types"
 
 msgid "Service"
-msgstr ""
+msgstr "Service"
 
 msgid "Services"
-msgstr ""
+msgstr "Services"
 
 msgid "Published"
-msgstr ""
+msgstr "Published"
 
 msgid "Waiting for publication"
-msgstr ""
+msgstr "Waiting for publication"
 
 msgid "Published Services"
-msgstr ""
+msgstr "Published Services"
 
 #, python-brace-format
 msgid ""
 "Bad value '{val}' for field {src}. Should be like '2h30', '2,5' or '2.5'"
 msgstr ""
+"Bad value '{val}' for field {src}. Should be like '2h30', '2,5' or '2.5'"
 
 #, python-brace-format
 msgid ""
 "Not contiguous segment {i} ({distance} m) for geometry for field '{src}'"
 msgstr ""
+"Not contiguous segment {i} ({distance} m) for geometry for field '{src}'"
 
 #, python-brace-format
 msgid ""
 "Invalid geometry type for field '{src}'. Should be LineString, not "
 "{geom_type}"
 msgstr ""
+"Invalid geometry type for field '{src}'. Should be LineString, not "
+"{geom_type}"
 
 #. Translators: This is a slug (without space, accent or special char)
 msgid "trek"
-msgstr ""
+msgstr "trek"
 
 msgid "Init sync ..."
-msgstr ""
+msgstr "Init sync ..."
 
 msgid "Public print"
-msgstr ""
+msgstr "Public print"
 
 msgid "Print"
-msgstr ""
+msgstr "Print"
 
 msgid "Attributes"
-msgstr ""
+msgstr "Attributes"
 
 msgid "None"
-msgstr ""
+msgstr "None"
 
 msgid "Thumbnail"
-msgstr ""
+msgstr "Thumbnail"
 
 msgid "Elevation"
-msgstr ""
+msgstr "Elevation"
 
 msgid "Attribution"
-msgstr ""
+msgstr "Attribution"
 
 msgid "Powered by http://geotrek.fr"
-msgstr ""
+msgstr "Powered by http://geotrek.fr"
 
 msgid ""
 "Your <strong>pictures should have the same ratio<strong> (height/width) for "
 "a better apparence in public portal."
 msgstr ""
+"Your <strong>pictures should have the same ratio<strong> (height/width) for "
+"a better apparence in public portal."
 
 msgid "Sync verifications"
-msgstr ""
+msgstr "Sync verifications"
 
 msgid "Sync in progress"
-msgstr ""
+msgstr "Sync in progress"
 
 msgid "An error occured"
-msgstr ""
+msgstr "An error occured"
 
 msgid "Public web site sync"
-msgstr ""
+msgstr "Public web site sync"
 
 msgid "Confirmation"
-msgstr ""
+msgstr "Confirmation"
 
 msgid "Are you sure you want to sync ?"
-msgstr ""
+msgstr "Are you sure you want to sync ?"
 
 msgid "Sync"
-msgstr ""
+msgstr "Sync"
 
 msgid "GPX"
-msgstr ""
+msgstr "GPX"
 
 msgid "KML"
-msgstr ""
+msgstr "KML"
 
 msgid "yes,no"
-msgstr ""
+msgstr "yes,no"
 
 msgid "Itinerancy"
-msgstr ""
+msgstr "Itinerancy"
 
 msgid "Child of:"
-msgstr ""
+msgstr "Child of:"
 
 msgid "Parent of:"
-msgstr ""
+msgstr "Parent of:"
 
 msgid "Map"
-msgstr ""
+msgstr "Map"
 
 msgid "Add a point of reference"
-msgstr ""
+msgstr "Add a point of reference"
 
 msgid "Move points of reference"
-msgstr ""
+msgstr "Move points of reference"
 
 msgid "Delete a point of reference"
-msgstr ""
+msgstr "Delete a point of reference"
 
 msgid "Set the parking location"
-msgstr ""
+msgstr "Set the parking location"
 
 msgid "Move the parking location"
-msgstr ""
+msgstr "Move the parking location"
 
 msgid "Delete the parking location"
-msgstr ""
+msgstr "Delete the parking location"
 
 msgid "Add relation"
-msgstr ""
+msgstr "Add relation"
 
 msgid "Remove"
-msgstr ""
+msgstr "Remove"
 
 msgid "No result"
-msgstr ""
+msgstr "No result"
 
 msgid "Choose value(s)"
-msgstr ""
+msgstr "Choose value(s)"
 
 msgid "Powered by geotrek.fr"
-msgstr ""
+msgstr "Powered by geotrek.fr"
 
 msgid "Useful information"
-msgstr ""
+msgstr "Useful information"
 
 msgid "Length"
-msgstr ""
+msgstr "Length"
 
 msgid "Trek ascent"
-msgstr ""
+msgstr "Trek ascent"
 
 msgid "Markings"
-msgstr ""
+msgstr "Markings"
 
 msgid "Stages"
-msgstr ""
+msgstr "Stages"
 
 msgid "On your path..."
-msgstr ""
+msgstr "On your path..."
 
 msgid "All useful information"
-msgstr ""
+msgstr "All useful information"
 
 msgid "This hike is in the core of the national park"
-msgstr ""
+msgstr "This hike is in the core of the national park"
 
 msgid ""
 "The national park is an unrestricted natural area but subjected to "
 "regulations which must be known by all visitors."
 msgstr ""
+"The national park is an unrestricted natural area but subjected to "
+"regulations which must be known by all visitors."
 
 msgid "Advices"
-msgstr ""
+msgstr "Advices"
 
 msgid "Altimetric profile"
-msgstr ""
+msgstr "Altimetric profile"
 
 msgid "Min elevation"
-msgstr ""
+msgstr "Min elevation"
 
 msgid "Max elevation"
-msgstr ""
+msgstr "Max elevation"
 
 msgid "Transports"
-msgstr ""
+msgstr "Transports"
 
 msgid "Disabled Infrastructure"
-msgstr ""
+msgstr "Disabled Infrastructure"
 
 msgid ""
 "This hike is in the core of the national park > The national park is an "
 "unrestricted natural area but subjected to regulations which must be known "
 "by all visitors."
 msgstr ""
+"This hike is in the core of the national park > The national park is an "
+"unrestricted natural area but subjected to regulations which must be known "
+"by all visitors."
 
 msgid "On the way..."
-msgstr ""
+msgstr "On the way..."
 
 msgid "Related Treks"
-msgstr ""
+msgstr "Related Treks"
 
 msgid ""
 "To check the practicability of the hiking paths and to know more about the "
 "National park, please visit us or call us at"
 msgstr ""
+"To check the practicability of the hiking paths and to know more about the "
+"National park, please visit us or call us at"
 
 msgid "Add a new poi"
-msgstr ""
+msgstr "Add a new poi"
 
 msgid "Add a new service"
-msgstr ""
+msgstr "Add a new service"
 
 msgid "Add Web link"
-msgstr ""
+msgstr "Add Web link"
 
 #, python-format
 msgid "%s days"
-msgstr ""
+msgstr "%s days"
 
 #, python-format
 msgid "%(hour)s h %(min)s"
-msgstr ""
+msgstr "%(hour)s h %(min)s"
 
 #, python-format
 msgid "%(hour)s h"
-msgstr ""
+msgstr "%(hour)s h"
 
 #, python-format
 msgid "%s min"
-msgstr ""
+msgstr "%s min"
 
 msgid "Geographical location"
-msgstr ""
+msgstr "Geographical location"
 
 msgid "Hike"
 msgstr "Hike"

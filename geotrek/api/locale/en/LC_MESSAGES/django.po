@@ -3,110 +3,113 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-25 09:25+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-06-05 15:57+0200\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.1\n"
 
 msgid "Set geometry dimension (2 by default for 2D, 3 for 3D)"
-msgstr ""
+msgstr "Set geometry dimension (2 by default for 2D, 3 for 3D)"
 
 msgid "Set language for translation. 'all' by default"
-msgstr ""
+msgstr "Set language for translation. 'all' by default"
 
 msgid "Set output format (json / geojson). JSON by default"
-msgstr ""
+msgstr "Set output format (json / geojson). JSON by default"
 
 msgid "Limit required fields to increase performances. Ex : id,url,geometry"
-msgstr ""
+msgstr "Limit required fields to increase performances. Ex : id,url,geometry"
 
 msgid "Omit specified fields to increase performance. Ex: url,category"
-msgstr ""
+msgstr "Omit specified fields to increase performance. Ex: url,category"
 
 msgid ""
 "Filter elements contained in bbox formatted like SW-lng,SW-lat,NE-lng,NE-lat"
 msgstr ""
+"Filter elements contained in bbox formatted like SW-lng,SW-lat,NE-lng,NE-lat"
 
 msgid "Max distance in meters between point and elements"
-msgstr ""
+msgstr "Max distance in meters between point and elements"
 
 msgid "Reference point to compute distance LNG,LAT"
-msgstr ""
+msgstr "Reference point to compute distance LNG,LAT"
 
 msgid ""
 "Publication state. If language specified, only language published are "
 "filterted. true / false"
 msgstr ""
+"Publication state. If language specified, only language published are "
+"filterted. true / false"
 
 msgid "External ID"
-msgstr ""
+msgstr "External ID"
 
 msgid "Difficulties"
-msgstr ""
+msgstr "Difficulties"
 
 msgid "Lengths"
-msgstr ""
+msgstr "Lengths"
 
 msgid "Durations"
-msgstr ""
+msgstr "Durations"
 
 msgid "Show all cities"
-msgstr ""
+msgstr "Show all cities"
 
 msgid "Hide all cities"
-msgstr ""
+msgstr "Hide all cities"
 
 msgid "Show all difficulties"
-msgstr ""
+msgstr "Show all difficulties"
 
 msgid "Hide all difficulties"
-msgstr ""
+msgstr "Hide all difficulties"
 
 msgid "Show all accessibilities"
-msgstr ""
+msgstr "Show all accessibilities"
 
 msgid "Hide all accessibilities"
-msgstr ""
+msgstr "Hide all accessibilities"
 
 msgid "Show all practices"
-msgstr ""
+msgstr "Show all practices"
 
 msgid "Hide all practices"
-msgstr ""
+msgstr "Hide all practices"
 
 msgid "Show all themes"
-msgstr ""
+msgstr "Show all themes"
 
 msgid "Hide all themes"
-msgstr ""
+msgstr "Hide all themes"
 
 msgid "Show all routes"
-msgstr ""
+msgstr "Show all routes"
 
 msgid "Hide all routes"
-msgstr ""
+msgstr "Hide all routes"
 
 msgid "Show all lengths"
-msgstr ""
+msgstr "Show all lengths"
 
 msgid "Hide all lengths"
-msgstr ""
+msgstr "Hide all lengths"
 
 msgid "Show all durations"
-msgstr ""
+msgstr "Show all durations"
 
 msgid "Hide all durations"
-msgstr ""
+msgstr "Hide all durations"
 
 msgid "Information Desks Types"
-msgstr ""
+msgstr "Information Desks Types"

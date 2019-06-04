@@ -3,283 +3,281 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-16 09:02+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-06-03 15:29+0200\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.1\n"
 
 msgid "content type"
-msgstr ""
+msgstr "content type"
 
 msgid "Common"
-msgstr ""
+msgstr "Common"
 
 #, python-format
 msgid "min %s"
-msgstr ""
+msgstr "min %s"
 
 #, python-format
 msgid "max %s"
-msgstr ""
+msgstr "max %s"
 
 msgid "Data to import from network"
-msgstr ""
+msgstr "Data to import from network"
 
 msgid "Import"
-msgstr ""
+msgstr "Import"
 
 msgid "File"
-msgstr ""
+msgstr "File"
 
 msgid "Data to import from local file"
-msgstr ""
+msgstr "Data to import from local file"
 
 msgid "File must be of ZIP type."
-msgstr ""
+msgstr "File must be of ZIP type."
 
 msgid "Insertion date"
-msgstr ""
+msgstr "Insertion date"
 
 msgid "Update date"
-msgstr ""
+msgstr "Update date"
 
 msgid "Deleted"
-msgstr ""
+msgstr "Deleted"
 
 #, python-format
 msgid "Image %s invalid or missing from disk."
-msgstr ""
+msgstr "Image %s invalid or missing from disk."
 
 msgid "Thumbnail"
-msgstr ""
+msgstr "Thumbnail"
 
 msgid "None"
-msgstr ""
+msgstr "None"
 
 msgid "Published"
-msgstr ""
+msgstr "Published"
 
 msgid "Online"
-msgstr ""
+msgstr "Online"
 
 msgid "Publication date"
-msgstr ""
+msgstr "Publication date"
 
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgid "Public name (Change carefully)"
-msgstr ""
+msgstr "Public name (Change carefully)"
 
 msgid "Waiting for publication"
-msgstr ""
+msgstr "Waiting for publication"
 
 msgid "Pictogram"
-msgstr ""
+msgstr "Pictogram"
 
 msgid "Organism"
-msgstr ""
+msgstr "Organism"
 
 msgid "Organisms"
-msgstr ""
+msgstr "Organisms"
 
 msgid "Label"
-msgstr ""
+msgstr "Label"
 
 msgid "Cirkwi tag"
-msgstr ""
+msgstr "Cirkwi tag"
 
 msgid "Theme"
-msgstr ""
+msgstr "Theme"
 
 msgid "Themes"
-msgstr ""
+msgstr "Themes"
 
 msgid "Website"
-msgstr ""
+msgstr "Website"
 
 msgid "Record source"
-msgstr ""
+msgstr "Record source"
 
 msgid "Record sources"
-msgstr ""
+msgstr "Record sources"
 
 msgid "Used for sync"
-msgstr ""
+msgstr "Used for sync"
 
 msgid "Target portal"
-msgstr ""
+msgstr "Target portal"
 
 msgid "Target portals"
-msgstr ""
+msgstr "Target portals"
 
 #, python-brace-format
 msgid "Line {line}"
-msgstr ""
+msgstr "Line {line}"
 
 #, python-brace-format
 msgid "Missing {required}field '{src}'"
-msgstr ""
+msgstr "Missing {required}field '{src}'"
 
 #, python-brace-format
 msgid "Destination field '{dst}' not in natural keys configuration"
-msgstr ""
+msgstr "Destination field '{dst}' not in natural keys configuration"
 
 #, python-brace-format
 msgid "Null value not allowed for field '{src}'"
-msgstr ""
+msgstr "Null value not allowed for field '{src}'"
 
 #, python-brace-format
 msgid "Blank value not allowed for field '{src}'"
-msgstr ""
+msgstr "Blank value not allowed for field '{src}'"
 
 #, python-brace-format
 msgid "Eid field '{eid_dst}' missing in parser configuration"
-msgstr ""
+msgstr "Eid field '{eid_dst}' missing in parser configuration"
 
 #, python-brace-format
 msgid "Missing id field '{eid_src}'"
-msgstr ""
+msgstr "Missing id field '{eid_src}'"
 
 #, python-brace-format
-msgid ""
-"Bad value '{eid_val}' for field '{eid_src}'. No object with this identifier"
-msgstr ""
+msgid "Bad value '{eid_val}' for field '{eid_src}'. No object with this identifier"
+msgstr "Bad value '{eid_val}' for field '{eid_src}'. No object with this identifier"
 
 #, python-brace-format
-msgid ""
-"Bad value '{eid_val}' for field '{eid_src}'. Multiple objects with this "
-"identifier"
-msgstr ""
+msgid "Bad value '{eid_val}' for field '{eid_src}'. Multiple objects with this identifier"
+msgstr "Bad value '{eid_val}' for field '{eid_src}'. Multiple objects with this identifier"
 
 #, python-brace-format
 msgid "Bad value '{val}' for field {src}. Should contain {values}"
-msgstr ""
+msgstr "Bad value '{val}' for field {src}. Should contain {values}"
 
 #, python-brace-format
 msgid "Bad value '{val}' for field {src}. Should be {values}"
-msgstr ""
+msgstr "Bad value '{val}' for field {src}. Should be {values}"
 
 #, python-brace-format
-msgid ""
-"{model} '{val}' did not exist in Geotrek-Admin and was automatically created"
-msgstr ""
+msgid "{model} '{val}' did not exist in Geotrek-Admin and was automatically created"
+msgstr "{model} '{val}' did not exist in Geotrek-Admin and was automatically created"
 
 #, python-brace-format
 msgid "{model} '{val}' does not exists in Geotrek-Admin. Please add it"
-msgstr ""
+msgstr "{model} '{val}' does not exists in Geotrek-Admin. Please add it"
 
 msgid "Filename is required"
-msgstr ""
+msgstr "Filename is required"
 
 #, python-brace-format
 msgid "File does not exists at: {filename}"
-msgstr ""
+msgstr "File does not exists at: {filename}"
 
 msgid "Invalid geometry pointer"
-msgstr ""
+msgstr "Invalid geometry pointer"
 
 msgid "Attachments"
-msgstr ""
+msgstr "Attachments"
 
 #, python-brace-format
 msgid "FileType '{name}' does not exists in Geotrek-Admin. Please add it"
-msgstr ""
+msgstr "FileType '{name}' does not exists in Geotrek-Admin. Please add it"
 
 #, python-brace-format
 msgid "Failed to download '{url}'"
-msgstr ""
+msgstr "Failed to download '{url}'"
 
 #, python-brace-format
 msgid "Failed to download {url}. HTTP status code {status_code}"
-msgstr ""
+msgstr "Failed to download {url}. HTTP status code {status_code}"
 
 msgid "Import from web."
-msgstr ""
+msgstr "Import from web."
 
 msgid "Paths"
-msgstr ""
+msgstr "Paths"
 
 msgid "Tiles"
-msgstr ""
+msgstr "Tiles"
 
 msgid "DEM"
-msgstr ""
+msgstr "DEM"
 
 msgid "Viewport (WGS84)"
-msgstr ""
+msgstr "Viewport (WGS84)"
 
 msgid "Mouse"
-msgstr ""
+msgstr "Mouse"
 
 msgid "Imports"
-msgstr ""
+msgstr "Imports"
 
 msgid "Display report"
-msgstr ""
+msgstr "Display report"
 
 #, python-format
 msgid "%(n)s/%(nb_lines)s line imported."
 msgid_plural "%(n)s/%(nb_lines)s lines imported."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(n)s/%(nb_lines)s line imported."
+msgstr[1] "%(n)s/%(nb_lines)s lines imported."
 
 #, python-format
 msgid "%(n)s record created."
 msgid_plural "%(n)s records created."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(n)s record created."
+msgstr[1] "%(n)s records created."
 
 #, python-format
 msgid "%(n)s record updated."
 msgid_plural "%(n)s records updated."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(n)s record updated."
+msgstr[1] "%(n)s records updated."
 
 #, python-format
 msgid "%(n)s record deleted."
 msgid_plural "%(n)s records deleted."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(n)s record deleted."
+msgstr[1] "%(n)s records deleted."
 
 #, python-format
 msgid "%(n)s record unmodified."
 msgid_plural "%(n)s records unmodified."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(n)s record unmodified."
+msgstr[1] "%(n)s records unmodified."
 
 #, python-format
 msgid "%(n)s warning:"
 msgid_plural "%(n)s warnings:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(n)s warning:"
+msgstr[1] "%(n)s warnings:"
 
 msgid "Draft"
-msgstr ""
+msgstr "Draft"
 
 msgid "Object is published but"
-msgstr ""
+msgstr "Object is published but"
 
 msgid "looks incomplete;"
-msgstr ""
+msgstr "looks incomplete;"
 
 msgid "has invalid geometry;"
-msgstr ""
+msgstr "has invalid geometry;"
 
 msgid "Topology is not valid."
-msgstr ""
+msgstr "Topology is not valid."
 
 msgid "Any year"
-msgstr ""
+msgstr "Any year"
 
 msgid "Please select a choice related to all structures (without brackets) or related to the structure {struc} (in brackets)"
 msgstr ""
+"Please select a choice related to all structures (without brackets) or related to the structure {struc} (in brackets)"

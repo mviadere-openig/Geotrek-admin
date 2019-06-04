@@ -3,76 +3,76 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-16 09:02+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-06-05 15:58+0200\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.1\n"
 
 msgid "Infrastructure"
-msgstr ""
+msgstr "Infrastructure"
 
 msgid "Intervention year"
-msgstr ""
+msgstr "Intervention year"
 
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 msgid "Implantation year"
-msgstr ""
+msgstr "Implantation year"
 
 msgid "Category"
-msgstr ""
+msgstr "Category"
 
 msgid "Building"
-msgstr ""
+msgstr "Building"
 
 msgid "Facility"
-msgstr ""
+msgstr "Facility"
 
 msgid "Infrastructure Type"
-msgstr ""
+msgstr "Infrastructure Type"
 
 msgid "Infrastructure Types"
-msgstr ""
+msgstr "Infrastructure Types"
 
 msgid "Infrastructure Condition"
-msgstr ""
+msgstr "Infrastructure Condition"
 
 msgid "Infrastructure Conditions"
-msgstr ""
+msgstr "Infrastructure Conditions"
 
 msgid "Reference, code, ..."
-msgstr ""
+msgstr "Reference, code, ..."
 
 msgid "Specificites"
-msgstr ""
+msgstr "Specificites"
 
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgid "Condition"
-msgstr ""
+msgstr "Condition"
 
 msgid "Cities"
-msgstr ""
+msgstr "Cities"
 
 msgid "Infrastructures"
-msgstr ""
+msgstr "Infrastructures"
 
 msgid "None"
-msgstr ""
+msgstr "None"
 
 msgid "Add a new infrastructure"
-msgstr ""
+msgstr "Add a new infrastructure"
