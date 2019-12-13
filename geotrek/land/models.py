@@ -26,9 +26,9 @@ class PhysicalType(StructureOrNoneRelated):
 
 class PhysicalEdge(MapEntityMixin, Topology):
     topo_object = models.OneToOneField(Topology, parent_link=True,
-                                       db_column='evenement')
+                                       db_column='evenement', on_delete=models.CASCADE)
     physical_type = models.ForeignKey(PhysicalType, verbose_name=_("Physical type"),
-                                      db_column='type')
+                                      db_column='type', on_delete=models.CASCADE)
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True,
                            db_column='id_externe')
     # Override default manager
@@ -95,8 +95,8 @@ class LandType(StructureOrNoneRelated):
 
 class LandEdge(MapEntityMixin, Topology):
     topo_object = models.OneToOneField(Topology, parent_link=True,
-                                       db_column='evenement')
-    land_type = models.ForeignKey(LandType, verbose_name=_("Land type"), db_column='type')
+                                       db_column='evenement', on_delete=models.CASCADE)
+    land_type = models.ForeignKey(LandType, verbose_name=_("Land type"), db_column='type', on_delete=models.CASCADE)
     owner = models.TextField(verbose_name=_("Owner"), db_column='proprietaire', blank=True)
     agreement = models.BooleanField(verbose_name=_("Agreement"), db_column='convention', default=False)
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True,
@@ -150,8 +150,8 @@ Project.add_property('land_edges', lambda self: self.edges_by_attr('land_edges')
 
 class CompetenceEdge(MapEntityMixin, Topology):
     topo_object = models.OneToOneField(Topology, parent_link=True,
-                                       db_column='evenement')
-    organization = models.ForeignKey(Organism, verbose_name=_("Organism"), db_column='organisme')
+                                       db_column='evenement', on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organism, verbose_name=_("Organism"), db_column='organisme', on_delete=models.CASCADE)
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True,
                            db_column='id_externe')
 
@@ -203,8 +203,8 @@ Project.add_property('competence_edges', lambda self: self.edges_by_attr('compet
 
 class WorkManagementEdge(MapEntityMixin, Topology):
     topo_object = models.OneToOneField(Topology, parent_link=True,
-                                       db_column='evenement')
-    organization = models.ForeignKey(Organism, verbose_name=_("Organism"), db_column='organisme')
+                                       db_column='evenement', on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organism, verbose_name=_("Organism"), db_column='organisme', on_delete=models.CASCADE)
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True,
                            db_column='id_externe')
 
@@ -256,8 +256,8 @@ Project.add_property('work_edges', lambda self: self.edges_by_attr('work_edges')
 
 class SignageManagementEdge(MapEntityMixin, Topology):
     topo_object = models.OneToOneField(Topology, parent_link=True,
-                                       db_column='evenement')
-    organization = models.ForeignKey(Organism, verbose_name=_("Organism"), db_column='organisme')
+                                       db_column='evenement', on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organism, verbose_name=_("Organism"), db_column='organisme', on_delete=models.CASCADE)
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True,
                            db_column='id_externe')
 

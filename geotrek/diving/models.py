@@ -103,14 +103,14 @@ class Dive(AddPropertyMixin, PublishableMixin, MapEntityMixin, StructureRelated,
     description = models.TextField(verbose_name=_("Description"), blank=True, db_column='description',
                                    help_text=_("Complete description"))
     owner = models.CharField(verbose_name=_("Owner"), max_length=256, blank=True, db_column='proprietaire')
-    practice = models.ForeignKey(Practice, related_name="dives",
+    practice = models.ForeignKey(Practice, related_name="dives", on_delete=models.CASCADE,
                                  blank=True, null=True, verbose_name=_("Practice"), db_column='pratique')
     departure = models.CharField(verbose_name=_("Departure area"), max_length=128, blank=True,
                                  db_column='depart')
     disabled_sport = models.TextField(verbose_name=_("Disabled sport accessibility"),
                                       db_column='handicap', blank=True)
     facilities = models.TextField(verbose_name=_("Facilities"), db_column='equipements', blank=True)
-    difficulty = models.ForeignKey(Difficulty, related_name='dives', blank=True,
+    difficulty = models.ForeignKey(Difficulty, related_name='dives', blank=True, on_delete=models.CASCADE,
                                    null=True, verbose_name=_("Difficulty level"), db_column='difficulte')
     levels = models.ManyToManyField(Level, related_name='dives', blank=True,
                                     verbose_name=_("Technical levels"), db_table='g_r_plongee_niveau')

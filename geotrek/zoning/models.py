@@ -36,7 +36,7 @@ class RestrictedAreaManager(models.GeoManager):
 class RestrictedArea(models.Model):
     name = models.CharField(max_length=250, db_column='zonage', verbose_name=_("Name"))
     geom = models.MultiPolygonField(srid=settings.SRID, spatial_index=False)
-    area_type = models.ForeignKey(RestrictedAreaType, verbose_name=_("Restricted area"), db_column='type')
+    area_type = models.ForeignKey(RestrictedAreaType, verbose_name=_("Restricted area"), db_column='type', on_delete=models.CASCADE)
 
     # Override default manager
     objects = RestrictedAreaManager()
@@ -53,9 +53,9 @@ class RestrictedArea(models.Model):
 
 class RestrictedAreaEdge(Topology):
     topo_object = models.OneToOneField(Topology, parent_link=True,
-                                       db_column='evenement')
+                                       db_column='evenement', on_delete=models.CASCADE)
     restricted_area = models.ForeignKey(RestrictedArea, verbose_name=_("Restricted area"),
-                                        db_column='zone')
+                                        db_column='zone', on_delete=models.CASCADE)
 
     # Override default manager
     objects = Topology.get_manager_cls(models.GeoManager)()
@@ -133,9 +133,9 @@ class City(models.Model):
 
 class CityEdge(Topology):
     topo_object = models.OneToOneField(Topology, parent_link=True,
-                                       db_column='evenement')
+                                       db_column='evenement', on_delete=models.CASCADE)
 
-    city = models.ForeignKey(City, verbose_name=_("City"), db_column='commune')
+    city = models.ForeignKey(City, verbose_name=_("City"), db_column='commune', on_delete=models.CASCADE)
 
     # Override default manager
     objects = Topology.get_manager_cls(models.GeoManager)()
@@ -198,8 +198,8 @@ class District(models.Model):
 
 class DistrictEdge(Topology):
     topo_object = models.OneToOneField(Topology, parent_link=True,
-                                       db_column='evenement')
-    district = models.ForeignKey(District, verbose_name=_("District"), db_column='secteur')
+                                       db_column='evenement', on_delete=models.CASCADE)
+    district = models.ForeignKey(District, verbose_name=_("District"), db_column='secteur', on_delete=models.CASCADE)
 
     # Override default manager
     objects = Topology.get_manager_cls(models.GeoManager)()

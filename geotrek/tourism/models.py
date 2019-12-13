@@ -62,7 +62,7 @@ class InformationDeskType(PictogramMixin):
 class InformationDesk(models.Model):
 
     name = models.CharField(verbose_name=_("Title"), max_length=256, db_column='nom')
-    type = models.ForeignKey(InformationDeskType, verbose_name=_("Type"),
+    type = models.ForeignKey(InformationDeskType, verbose_name=_("Type"), on_delete=models.CASCADE,
                              related_name='desks', db_column='type')
     description = models.TextField(verbose_name=_("Description"), blank=True, db_column='description',
                                    help_text=_("Brief description"))
@@ -199,7 +199,7 @@ class TouristicContentCategory(PictogramMixin):
 class TouristicContentType(OptionalPictogramMixin):
 
     label = models.CharField(verbose_name=_("Label"), max_length=128, db_column='nom')
-    category = models.ForeignKey(TouristicContentCategory, related_name='types',
+    category = models.ForeignKey(TouristicContentCategory, related_name='types', on_delete=models.CASCADE,
                                  verbose_name=_("Category"), db_column='categorie')
     # Choose in which list of choices this type will appear
     in_list = models.IntegerField(choices=((1, _("First")), (2, _("Second"))), db_column='liste_choix')
@@ -276,7 +276,7 @@ class TouristicContent(AddPropertyMixin, PublishableMixin, MapEntityMixin, Struc
                                     db_table="t_r_contenu_touristique_theme", blank=True, verbose_name=_("Themes"),
                                     help_text=_("Main theme(s)"))
     geom = models.GeometryField(verbose_name=_("Location"), srid=settings.SRID)
-    category = models.ForeignKey(TouristicContentCategory, related_name='contents',
+    category = models.ForeignKey(TouristicContentCategory, related_name='contents', on_delete=models.CASCADE,
                                  verbose_name=_("Category"), db_column='categorie')
     contact = models.TextField(verbose_name=_("Contact"), blank=True, db_column='contact',
                                help_text=_("Address, phone, etc."))
@@ -300,7 +300,7 @@ class TouristicContent(AddPropertyMixin, PublishableMixin, MapEntityMixin, Struc
                                     verbose_name=_("Portal"), db_table='t_r_contenu_touristique_portal')
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True, db_column='id_externe')
     reservation_system = models.ForeignKey(ReservationSystem, verbose_name=_("Reservation system"),
-                                           blank=True, null=True)
+                                           on_delete=models.CASCADE, blank=True, null=True)
     reservation_id = models.CharField(verbose_name=_("Reservation ID"), max_length=1024,
                                       blank=True, db_column='id_reservation')
     approved = models.BooleanField(verbose_name=_("Approved"), default=False, db_column='labellise')
@@ -428,7 +428,7 @@ class TouristicEvent(AddPropertyMixin, PublishableMixin, MapEntityMixin, Structu
                               blank=True, null=True)
     organizer = models.CharField(verbose_name=_("Organizer"), max_length=256, blank=True, db_column='organisateur')
     speaker = models.CharField(verbose_name=_("Speaker"), max_length=256, blank=True, db_column='intervenant')
-    type = models.ForeignKey(TouristicEventType, verbose_name=_("Type"), blank=True, null=True, db_column='type')
+    type = models.ForeignKey(TouristicEventType, verbose_name=_("Type"), blank=True, null=True, db_column='type', on_delete=models.CASCADE)
     accessibility = models.CharField(verbose_name=_("Accessibility"), max_length=256, blank=True, db_column='accessibilite')
     participant_number = models.CharField(verbose_name=_("Number of participants"), max_length=256, blank=True, db_column='nb_places')
     booking = models.TextField(verbose_name=_("Booking"), blank=True, db_column='reservation')

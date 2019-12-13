@@ -61,7 +61,7 @@ class InfrastructureCondition(StructureOrNoneRelated):
 class BaseInfrastructure(BasePublishableMixin, Topology, StructureRelated):
     """ A generic infrastructure in the park """
     topo_object = models.OneToOneField(Topology, parent_link=True,
-                                       db_column='evenement')
+                                       db_column='evenement', on_delete=models.CASCADE)
 
     name = models.CharField(db_column="nom", max_length=128,
                             help_text=_("Reference, code, ..."), verbose_name=_("Name"))
@@ -121,7 +121,7 @@ class InfrastructureGISManager(gismodels.GeoManager):
 
 class Infrastructure(MapEntityMixin, BaseInfrastructure):
     """ An infrastructure in the park, which is not of type SIGNAGE """
-    type = models.ForeignKey(InfrastructureType, db_column='type', verbose_name=_("Type"))
+    type = models.ForeignKey(InfrastructureType, db_column='type', verbose_name=_("Type"), on_delete=models.CASCADE)
     objects = BaseInfrastructure.get_manager_cls(InfrastructureGISManager)()
 
     class Meta:

@@ -47,18 +47,19 @@ class Intervention(AddPropertyMixin, MapEntityMixin, AltimetryMixin,
 
     """ Topology can be of type Infrastructure, Signage or of own type Intervention """
     topology = models.ForeignKey(Topology, null=True,  # TODO: why null ?
+                                 on_delete=models.CASCADE,
                                  related_name="interventions_set",
                                  verbose_name=_("Interventions"))
     # AltimetyMixin for denormalized fields from related topology, updated via trigger.
     length = models.FloatField(editable=True, default=0.0, null=True, blank=True, db_column='longueur',
                                verbose_name=_("3D Length"))
 
-    stake = models.ForeignKey('core.Stake', null=True, blank=True,
+    stake = models.ForeignKey('core.Stake', null=True, blank=True, on_delete=models.CASCADE,
                               related_name='interventions', verbose_name=_("Stake"), db_column='enjeu')
 
-    status = models.ForeignKey('InterventionStatus', verbose_name=_("Status"), db_column='status')
+    status = models.ForeignKey('InterventionStatus', verbose_name=_("Status"), db_column='status', on_delete=models.CASCADE)
 
-    type = models.ForeignKey('InterventionType', null=True, blank=True,
+    type = models.ForeignKey('InterventionType', null=True, blank=True, on_delete=models.CASCADE,
                              verbose_name=_("Type"), db_column='type')
 
     disorders = models.ManyToManyField('InterventionDisorder', related_name="interventions",
@@ -68,7 +69,7 @@ class Intervention(AddPropertyMixin, MapEntityMixin, AltimetryMixin,
     jobs = models.ManyToManyField('InterventionJob', through='ManDay', verbose_name=_("Jobs"))
 
     project = models.ForeignKey('Project', null=True, blank=True, related_name="interventions",
-                                verbose_name=_("Project"), db_column='chantier')
+                                on_delete=models.CASCADE, verbose_name=_("Project"), db_column='chantier')
     description = models.TextField(blank=True, verbose_name=_("Description"), db_column='descriptif',
                                    help_text=_("Remarks and notes"))
 
@@ -378,8 +379,8 @@ class InterventionJob(StructureOrNoneRelated):
 class ManDay(models.Model):
 
     nb_days = models.DecimalField(verbose_name=_("Mandays"), decimal_places=2, max_digits=6, db_column='nb_jours')
-    intervention = models.ForeignKey(Intervention, db_column='intervention')
-    job = models.ForeignKey(InterventionJob, verbose_name=_("Job"), db_column='fonction')
+    intervention = models.ForeignKey(Intervention, db_column='intervention', on_delete=models.CASCADE)
+    job = models.ForeignKey(InterventionJob, verbose_name=_("Job"), db_column='fonction', on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'm_r_intervention_fonction'
@@ -414,15 +415,15 @@ class Project(AddPropertyMixin, MapEntityMixin, TimeStampedModelMixin,
                                     blank=True, null=True, help_text=_("€"))
     comments = models.TextField(verbose_name=_("Comments"), blank=True, db_column='commentaires',
                                 help_text=_("Remarks and notes"))
-    type = models.ForeignKey('ProjectType', null=True, blank=True,
+    type = models.ForeignKey('ProjectType', null=True, blank=True, on_delete=models.CASCADE,
                              verbose_name=_("Type"), db_column='type')
-    domain = models.ForeignKey('ProjectDomain', null=True, blank=True,
+    domain = models.ForeignKey('ProjectDomain', null=True, blank=True, on_delete=models.CASCADE,
                                verbose_name=_("Domain"), db_column='domaine')
     contractors = models.ManyToManyField('Contractor', related_name="projects", blank=True,
                                          db_table="m_r_chantier_prestataire", verbose_name=_("Contractors"))
-    project_owner = models.ForeignKey(Organism, related_name='own', blank=True, null=True,
+    project_owner = models.ForeignKey(Organism, related_name='own', blank=True, null=True, on_delete=models.CASCADE,
                                       verbose_name=_("Project owner"), db_column='maitre_oeuvre')
-    project_manager = models.ForeignKey(Organism, related_name='manage', blank=True, null=True,
+    project_manager = models.ForeignKey(Organism, related_name='manage', blank=True, null=True, on_delete=models.CASCADE,
                                         verbose_name=_("Project manager"), db_column='maitre_ouvrage')
     founders = models.ManyToManyField(Organism, through='Funding', verbose_name=_("Founders"))
 
@@ -628,8 +629,8 @@ class Contractor(StructureOrNoneRelated):
 class Funding(models.Model):
 
     amount = models.FloatField(default=0.0, verbose_name=_("Amount"), db_column='montant')
-    project = models.ForeignKey(Project, verbose_name=_("Project"), db_column='chantier')
-    organism = models.ForeignKey(Organism, verbose_name=_("Organism"), db_column='organisme')
+    project = models.ForeignKey(Project, verbose_name=_("Project"), db_column='chantier', on_delete=models.CASCADE)
+    organism = models.ForeignKey(Organism, verbose_name=_("Organism"), db_column='organisme', on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'm_r_chantier_financement'

@@ -66,11 +66,11 @@ class Signage(MapEntityMixin, BaseInfrastructure):
     objects = BaseInfrastructure.get_manager_cls(SignageGISManager)()
     code = models.CharField(verbose_name=_("Code"), max_length=250, blank=True, null=True,
                             db_column='code')
-    manager = models.ForeignKey(Organism, db_column='gestionnaire', verbose_name=_("Manager"), null=True, blank=True)
-    sealing = models.ForeignKey(Sealing, db_column='scellement', verbose_name=_("Sealing"), null=True, blank=True)
+    manager = models.ForeignKey(Organism, db_column='gestionnaire', verbose_name=_("Manager"), null=True, blank=True, on_delete=models.CASCADE)
+    sealing = models.ForeignKey(Sealing, db_column='scellement', verbose_name=_("Sealing"), null=True, blank=True, on_delete=models.CASCADE)
     printed_elevation = models.IntegerField(verbose_name=_("Printed elevation"), blank=True, null=True,
                                             db_column='altitude_imprimee')
-    type = models.ForeignKey(SignageType, db_column='type', verbose_name=_("Type"))
+    type = models.ForeignKey(SignageType, db_column='type', verbose_name=_("Type"), on_delete=models.CASCADE)
     gps_value_verbose_name = _("GPS coordinates")
 
     class Meta:
@@ -172,12 +172,12 @@ class Blade(NoDeleteMixin, MapEntityMixin, StructureRelated):
     number = models.CharField(verbose_name=_("Number"), max_length=250, db_column='numero')
     direction = models.ForeignKey(Direction, verbose_name=_("Direction"), db_column='direction',
                                   on_delete=models.PROTECT)
-    type = models.ForeignKey(BladeType, db_column='type', verbose_name=_("Type"))
+    type = models.ForeignKey(BladeType, db_column='type', verbose_name=_("Type"), on_delete=models.CASCADE)
     color = models.ForeignKey(Color, db_column='couleur', on_delete=models.PROTECT, null=True, blank=True,
                               verbose_name=_("Color"))
     condition = models.ForeignKey(InfrastructureCondition, db_column='etat', verbose_name=_("Condition"),
                                   null=True, blank=True, on_delete=models.PROTECT)
-    topology = models.ForeignKey(Topology, related_name="blades_set", verbose_name=_("Blades"))
+    topology = models.ForeignKey(Topology, related_name="blades_set", verbose_name=_("Blades"), on_delete=models.CASCADE)
     objects = NoDeleteMixin.get_manager_cls(BladeManager)()
 
     class Meta:

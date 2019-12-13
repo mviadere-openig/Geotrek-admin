@@ -58,7 +58,7 @@ class Attachment(BaseAttachment):
 class Theme(PictogramMixin):
 
     label = models.CharField(verbose_name=_("Label"), max_length=128, db_column='theme')
-    cirkwi = models.ForeignKey('cirkwi.CirkwiTag', verbose_name=_("Cirkwi tag"), null=True, blank=True)
+    cirkwi = models.ForeignKey('cirkwi.CirkwiTag', verbose_name=_("Cirkwi tag"), null=True, blank=True, on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'o_b_theme'

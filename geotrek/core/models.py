@@ -74,13 +74,13 @@ class Path(AddPropertyMixin, MapEntityMixin, AltimetryMixin,
     arrival = models.CharField(null=True, blank=True, default="", max_length=250, db_column='arrivee', verbose_name=_("Arrival"),
                                help_text=_("Arrival place"))
 
-    comfort = models.ForeignKey('Comfort',
+    comfort = models.ForeignKey('Comfort', on_delete=models.CASCADE,
                                 null=True, blank=True, related_name='paths',
                                 verbose_name=_("Comfort"), db_column='confort')
-    source = models.ForeignKey('PathSource',
+    source = models.ForeignKey('PathSource', on_delete=models.CASCADE,
                                null=True, blank=True, related_name='paths',
                                verbose_name=_("Source"), db_column='source')
-    stake = models.ForeignKey('Stake',
+    stake = models.ForeignKey('Stake', on_delete=models.CASCADE,
                               null=True, blank=True, related_name='paths',
                               verbose_name=_("Maintenance stake"), db_column='enjeu')
     usages = models.ManyToManyField('Usage',
@@ -503,7 +503,7 @@ class PathAggregation(models.Model):
                              verbose_name=_("Path"),
                              related_name="aggregations",
                              on_delete=models.DO_NOTHING)  # The CASCADE behavior is enforced at DB-level (see file ../sql/20_evenements_troncons.sql)
-    topo_object = models.ForeignKey(Topology, null=False, related_name="aggregations",
+    topo_object = models.ForeignKey(Topology, null=False, related_name="aggregations", on_delete=models.CASCADE,
                                     db_column='evenement', verbose_name=_("Topology"))
     start_position = models.FloatField(db_column='pk_debut', verbose_name=_("Start position"), db_index=True)
     end_position = models.FloatField(db_column='pk_fin', verbose_name=_("End position"), db_index=True)
@@ -638,7 +638,7 @@ class Network(StructureOrNoneRelated):
 
 class Trail(MapEntityMixin, Topology, StructureRelated):
     topo_object = models.OneToOneField(Topology, parent_link=True,
-                                       db_column='evenement')
+                                       db_column='evenement', on_delete=models.CASCADE)
     name = models.CharField(verbose_name=_("Name"), max_length=64, db_column='nom')
     departure = models.CharField(verbose_name=_("Departure"), blank=True, max_length=64, db_column='depart')
     arrival = models.CharField(verbose_name=_("Arrival"), blank=True, max_length=64, db_column='arrivee')
