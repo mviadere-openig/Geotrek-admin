@@ -652,7 +652,7 @@ class WebLinkCategory(PictogramMixin):
         return "%s" % self.label
 
 
-class POIManager(models.Model):
+class POIManager(models.Manager):
     def get_queryset(self):
         return super(POIManager, self).get_queryset().select_related('type', 'structure')
 
@@ -784,7 +784,7 @@ class ServiceType(PictogramMixin, PublishableMixin):
         return self.name
 
 
-class ServiceManager(models.Model):
+class ServiceManager(models.Manager):
     def get_queryset(self):
         return super(ServiceManager, self).get_queryset().select_related('type', 'structure')
 
