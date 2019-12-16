@@ -28,7 +28,7 @@ class RestrictedAreaType(models.Model):
         return self.name
 
 
-class RestrictedAreaManager(models.GeoManager):
+class RestrictedAreaManager(models.Model):
     def get_queryset(self):
         return super(RestrictedAreaManager, self).get_queryset().select_related('area_type')
 
@@ -58,7 +58,7 @@ class RestrictedAreaEdge(Topology):
                                         db_column='zone', on_delete=models.CASCADE)
 
     # Override default manager
-    objects = Topology.get_manager_cls(models.GeoManager)()
+    objects = Topology.get_manager_cls(models.Manager)()
 
     class Meta:
         db_table = 'f_t_zonage'
@@ -119,7 +119,7 @@ class City(models.Model):
     geom = models.MultiPolygonField(srid=settings.SRID, spatial_index=False)
 
     # Override default manager
-    objects = models.GeoManager()
+    objects = models.Manager()
 
     class Meta:
         db_table = 'l_commune'
@@ -138,7 +138,7 @@ class CityEdge(Topology):
     city = models.ForeignKey(City, verbose_name=_("City"), db_column='commune', on_delete=models.CASCADE)
 
     # Override default manager
-    objects = Topology.get_manager_cls(models.GeoManager)()
+    objects = Topology.get_manager_cls(models.Manager)()
 
     class Meta:
         db_table = 'f_t_commune'
@@ -184,7 +184,7 @@ class District(models.Model):
     geom = models.MultiPolygonField(srid=settings.SRID, spatial_index=False)
 
     # Override default manager
-    objects = models.GeoManager()
+    objects = models.Manager()
 
     class Meta:
         db_table = 'l_secteur'
@@ -202,7 +202,7 @@ class DistrictEdge(Topology):
     district = models.ForeignKey(District, verbose_name=_("District"), db_column='secteur', on_delete=models.CASCADE)
 
     # Override default manager
-    objects = Topology.get_manager_cls(models.GeoManager)()
+    objects = Topology.get_manager_cls(models.Manager)()
 
     class Meta:
         db_table = 'f_t_secteur'

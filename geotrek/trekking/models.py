@@ -125,7 +125,7 @@ class Trek(StructureRelated, PicturesMixin, PublishableMixin, MapEntityMixin, To
     pois_excluded = models.ManyToManyField('Poi', related_name='excluded_treks', verbose_name=_("Excluded POIs"),
                                            db_table="l_r_troncon_poi_exclus", blank=True)
 
-    objects = Topology.get_manager_cls(models.GeoManager)()
+    objects = Topology.get_manager_cls(models.Manager)()
 
     category_id_prefix = 'T'
     capture_map_image_waitfor = '.poi_enum_loaded.services_loaded.info_desks_loaded.ref_points_loaded'
@@ -652,7 +652,7 @@ class WebLinkCategory(PictogramMixin):
         return "%s" % self.label
 
 
-class POIManager(models.GeoManager):
+class POIManager(models.Model):
     def get_queryset(self):
         return super(POIManager, self).get_queryset().select_related('type', 'structure')
 
@@ -784,7 +784,7 @@ class ServiceType(PictogramMixin, PublishableMixin):
         return self.name
 
 
-class ServiceManager(models.GeoManager):
+class ServiceManager(models.Model):
     def get_queryset(self):
         return super(ServiceManager, self).get_queryset().select_related('type', 'structure')
 

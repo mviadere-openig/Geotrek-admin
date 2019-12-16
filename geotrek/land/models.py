@@ -32,7 +32,7 @@ class PhysicalEdge(MapEntityMixin, Topology):
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True,
                            db_column='id_externe')
     # Override default manager
-    objects = Topology.get_manager_cls(models.GeoManager)()
+    objects = Topology.get_manager_cls(models.Manager)()
 
     class Meta:
         db_table = 'f_t_nature'
@@ -103,7 +103,7 @@ class LandEdge(MapEntityMixin, Topology):
                            db_column='id_externe')
 
     # Override default manager
-    objects = Topology.get_manager_cls(models.GeoManager)()
+    objects = Topology.get_manager_cls(models.Manager)()
 
     class Meta:
         db_table = 'f_t_foncier'
@@ -156,7 +156,7 @@ class CompetenceEdge(MapEntityMixin, Topology):
                            db_column='id_externe')
 
     # Override default manager
-    objects = Topology.get_manager_cls(models.GeoManager)()
+    objects = Topology.get_manager_cls(models.Manager)()
 
     class Meta:
         db_table = 'f_t_competence'
@@ -209,7 +209,7 @@ class WorkManagementEdge(MapEntityMixin, Topology):
                            db_column='id_externe')
 
     # Override default manager
-    objects = Topology.get_manager_cls(models.GeoManager)()
+    objects = Topology.get_manager_cls(models.Manager)()
 
     class Meta:
         db_table = 'f_t_gestion_travaux'
@@ -262,7 +262,7 @@ class SignageManagementEdge(MapEntityMixin, Topology):
                            db_column='id_externe')
 
     # Override default manager
-    objects = Topology.get_manager_cls(models.GeoManager)()
+    objects = Topology.get_manager_cls(models.Manager)()
 
     class Meta:
         db_table = 'f_t_gestion_signaletique'
