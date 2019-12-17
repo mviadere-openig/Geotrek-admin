@@ -155,6 +155,10 @@
         }
       },
       "geolocalisation" : {
+        "complement" : {
+          "libelleFr" : "TestFr",
+          "libelleEn" : "TestEn"
+        },
         "geoJson" : {
           "coordinates" : [ 5.793507, 44.277451 ]
         }

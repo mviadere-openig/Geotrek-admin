@@ -91,6 +91,10 @@
         }
       },
       "geolocalisation" : {
+        "complement" : {
+          "libelleFr" : "TestFr",
+          "libelleEn" : "TestEn"
+        },
         "geoJson" : {
           "coordinates" : [ 6.794103, 44.756403 ]
         }
@@ -125,12 +129,14 @@
     },
     "ouverture" : {
       "periodeEnClair" : {
-        "libelleFr" : "Du 01/05 au 31/10."
+        "libelleFr" : "Du 01/05 au 31/10.",
+        "libelleEn" : "From 01/05 to 31/10."
       }
     },
     "descriptionTarif" : {
       "tarifsEnClair" : {
-        "libelleFr" : "A partir de 30 € par personne"
+        "libelleFr" : "A partir de 30 € par personne",
+        "libelleEn" : "From 30 € per person"
       },
       "modesPaiement" : [ {
         "elementReferenceType" : "ModePaiement",
