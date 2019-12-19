@@ -2,6 +2,7 @@ from urllib.parse import urljoin
 
 from django.conf import settings
 from django.db.models import Q
+from django.contrib.gis.db.models.functions import Transform
 from django.http import Http404
 from django.utils import translation
 from django.views.generic import DetailView
@@ -166,7 +167,7 @@ class DiveViewSet(MapEntityViewSet):
         if 'portal' in self.request.GET:
             qs = qs.filter(Q(portal__name__in=self.request.GET['portal'].split(',')) | Q(portal=None))
 
-        qs = qs.transform(settings.API_SRID, field_name='geom')
+        qs = qs.annotate(transform=Transform("geom", settings.API_SRID))
 
         return qs
 
@@ -188,7 +189,7 @@ class DivePOIViewSet(viewsets.ModelViewSet):
             raise Http404
         if not dive.is_public():
             raise Http404
-        return dive.pois.filter(published=True).transform(settings.API_SRID, field_name='geom')
+        return dive.pois.filter(published=True).annotate(transform=Transform("geom", settings.API_SRID))
 
 
 class DiveServiceViewSet(viewsets.ModelViewSet):
@@ -208,7 +209,7 @@ class DiveServiceViewSet(viewsets.ModelViewSet):
             raise Http404
         if not dive.is_public():
             raise Http404
-        return dive.services.filter(type__published=True).transform(settings.API_SRID, field_name='geom')
+        return dive.services.filter(type__published=True).annotate(transform=Transform("geom", settings.API_SRID))
 
 # Translations for public PDF
 # translation.ugettext_noop("...")
