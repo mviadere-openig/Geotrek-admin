@@ -28,13 +28,11 @@ class APILocaleMiddleware(object):
         self.get_response = get_response
 
     def __call__(self, request):
-        return self.get_response(request)
-
-    def process_request(self, request):
         language = get_language_from_path(request.path_info)
         if language:
             translation.activate(language)
             request.LANGUAGE_CODE = translation.get_language()
+        return self.get_response(request)
 
 
 CONVERSION_SERVER_HOST = urlparse(settings.MAPENTITY_CONFIG['CONVERSION_SERVER']).hostname
@@ -80,9 +78,6 @@ class FixedAutoLoginMiddleware(AutoLoginMiddleware):
         self.get_response = get_response
 
     def __call__(self, request):
-        return self.get_response(request)
-
-    def process_request(self, request):
         if "HTTP_X_FORWARDED_FOR" in request.META:
             request.META["HTTP_X_PROXY_REMOTE_ADDR"] = request.META["REMOTE_ADDR"]
             parts = request.META["HTTP_X_FORWARDED_FOR"].split(",", 1)
@@ -113,4 +108,4 @@ class FixedAutoLoginMiddleware(AutoLoginMiddleware):
                     print(exc)
                 request.user = user
 
-        return None
+        return self.get_response(request)
