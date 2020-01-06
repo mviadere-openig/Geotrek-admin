@@ -91,8 +91,6 @@ class SensitiveArea(MapEntityMixin, StructureRelated, TimeStampedModelMixin, NoD
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True,
                            db_column='id_externe')
 
-    objects = NoDeleteMixin.get_manager_cls(models.Manager)()
-
     class Meta:
         db_table = 's_t_zone_sensible'
         verbose_name = _("Sensitive area")

@@ -31,8 +31,6 @@ class PhysicalEdge(MapEntityMixin, Topology):
                                       db_column='type', on_delete=models.CASCADE)
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True,
                            db_column='id_externe')
-    # Override default manager
-    objects = Topology.get_manager_cls(models.Manager)()
 
     class Meta:
         db_table = 'f_t_nature'
@@ -102,9 +100,6 @@ class LandEdge(MapEntityMixin, Topology):
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True,
                            db_column='id_externe')
 
-    # Override default manager
-    objects = Topology.get_manager_cls(models.Manager)()
-
     class Meta:
         db_table = 'f_t_foncier'
         verbose_name = _("Land edge")
@@ -154,9 +149,6 @@ class CompetenceEdge(MapEntityMixin, Topology):
     organization = models.ForeignKey(Organism, verbose_name=_("Organism"), db_column='organisme', on_delete=models.CASCADE)
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True,
                            db_column='id_externe')
-
-    # Override default manager
-    objects = Topology.get_manager_cls(models.Manager)()
 
     class Meta:
         db_table = 'f_t_competence'
@@ -208,9 +200,6 @@ class WorkManagementEdge(MapEntityMixin, Topology):
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True,
                            db_column='id_externe')
 
-    # Override default manager
-    objects = Topology.get_manager_cls(models.Manager)()
-
     class Meta:
         db_table = 'f_t_gestion_travaux'
         verbose_name = _("Work management edge")
@@ -260,9 +249,6 @@ class SignageManagementEdge(MapEntityMixin, Topology):
     organization = models.ForeignKey(Organism, verbose_name=_("Organism"), db_column='organisme', on_delete=models.CASCADE)
     eid = models.CharField(verbose_name=_("External id"), max_length=1024, blank=True, null=True,
                            db_column='id_externe')
-
-    # Override default manager
-    objects = Topology.get_manager_cls(models.Manager)()
 
     class Meta:
         db_table = 'f_t_gestion_signaletique'

@@ -19,7 +19,7 @@ from geotrek.authent.models import StructureRelated
 from geotrek.core.models import Path, Topology, simplify_coords
 from geotrek.common.utils import intersecting, classproperty
 from geotrek.common.mixins import (PicturesMixin, PublishableMixin,
-                                   PictogramMixin, OptionalPictogramMixin)
+                                   PictogramMixin, OptionalPictogramMixin, NoDeleteManager)
 from geotrek.common.models import Theme
 from geotrek.maintenance.models import Intervention, Project
 from geotrek.tourism import models as tourism_models
@@ -56,7 +56,7 @@ class OrderedTrekChild(models.Model):
         )
 
 
-class Trek(StructureRelated, PicturesMixin, PublishableMixin, MapEntityMixin, Topology):
+class Trek(Topology, StructureRelated, PicturesMixin, PublishableMixin, MapEntityMixin):
     topo_object = models.OneToOneField(Topology, parent_link=True,
                                        db_column='evenement', on_delete=models.CASCADE)
     departure = models.CharField(verbose_name=_("Departure"), max_length=128, blank=True,
@@ -124,8 +124,6 @@ class Trek(StructureRelated, PicturesMixin, PublishableMixin, MapEntityMixin, To
     eid2 = models.CharField(verbose_name=_("Second external id"), max_length=1024, blank=True, null=True, db_column='id_externe2')
     pois_excluded = models.ManyToManyField('Poi', related_name='excluded_treks', verbose_name=_("Excluded POIs"),
                                            db_table="l_r_troncon_poi_exclus", blank=True)
-
-    objects = Topology.get_manager_cls(models.Manager)()
 
     category_id_prefix = 'T'
     capture_map_image_waitfor = '.poi_enum_loaded.services_loaded.info_desks_loaded.ref_points_loaded'
@@ -652,9 +650,9 @@ class WebLinkCategory(PictogramMixin):
         return "%s" % self.label
 
 
-class POIManager(models.Manager):
+class POIManager(NoDeleteManager):
     def get_queryset(self):
-        return super(POIManager, self).get_queryset().select_related('type', 'structure')
+        return super().get_queryset().select_related('type', 'structure')
 
 
 class POI(StructureRelated, PicturesMixin, PublishableMixin, MapEntityMixin, Topology):
@@ -672,7 +670,7 @@ class POI(StructureRelated, PicturesMixin, PublishableMixin, MapEntityMixin, Top
         verbose_name_plural = _("POI")
 
     # Override default manager
-    objects = Topology.get_manager_cls(POIManager)()
+    objects = POIManager()
 
     # Do no check structure when selecting POIs to exclude
     check_structure_in_forms = False
@@ -784,9 +782,9 @@ class ServiceType(PictogramMixin, PublishableMixin):
         return self.name
 
 
-class ServiceManager(models.Manager):
+class ServiceManager(NoDeleteManager):
     def get_queryset(self):
-        return super(ServiceManager, self).get_queryset().select_related('type', 'structure')
+        return super().get_queryset().select_related('type', 'structure')
 
 
 class Service(StructureRelated, MapEntityMixin, Topology):
@@ -802,7 +800,7 @@ class Service(StructureRelated, MapEntityMixin, Topology):
         verbose_name_plural = _("Services")
 
     # Override default manager
-    objects = Topology.get_manager_cls(ServiceManager)()
+    objects = ServiceManager()
 
     def __str__(self):
         return str(self.type)
