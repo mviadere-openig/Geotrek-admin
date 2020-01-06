@@ -279,7 +279,7 @@ class TouristicContentViewSet(MapEntityViewSet):
         if 'portal' in self.request.GET:
             qs = qs.filter(Q(portal__name__in=self.request.GET['portal'].split(',')) | Q(portal=None))
 
-        qs.annotate(transform=Transform("geom", settings.API_SRID))
+        qs.annotate(api_geom=Transform("geom", settings.API_SRID))
         return qs
 
 
@@ -314,7 +314,7 @@ class TouristicEventViewSet(MapEntityViewSet):
         if 'portal' in self.request.GET:
             qs = qs.filter(Q(portal__name__in=self.request.GET['portal'].split(',')) | Q(portal=None))
 
-        qs.annotate(transform=Transform("geom", settings.API_SRID))
+        qs.annotate(api_geom=Transform("geom", settings.API_SRID))
         return qs
 
 
@@ -336,7 +336,7 @@ class InformationDeskViewSet(viewsets.ModelViewSet):
         qs = super(InformationDeskViewSet, self).get_queryset()
         if self.kwargs.get('type'):
             qs = qs.filter(type_id=self.kwargs['type'])
-        qs.annotate(transform=Transform("geom", settings.API_SRID))
+        qs.annotate(api_geom=Transform("geom", settings.API_SRID))
         return qs
 
 
@@ -355,7 +355,7 @@ class TrekInformationDeskViewSet(viewsets.ModelViewSet):
             trek = Trek.objects.existing().get(pk=pk)
         except Trek.DoesNotExist:
             raise Http404
-        return trek.information_desks.all().annotate(transform=Transform("geom", settings.API_SRID))
+        return trek.information_desks.all().annotate(api_geom=Transform("geom", settings.API_SRID))
 
 
 class TrekTouristicContentViewSet(viewsets.ModelViewSet):
@@ -387,7 +387,7 @@ class TrekTouristicContentViewSet(viewsets.ModelViewSet):
         if 'portal' in self.request.GET:
             queryset = queryset.filter(portal__name__in=self.request.GET['portal'].split(','))
 
-        return queryset.annotate(transform=Transform("geom", settings.API_SRID))
+        return queryset.annotate(api_geom=Transform("geom", settings.API_SRID))
 
 
 class TrekTouristicEventViewSet(viewsets.ModelViewSet):
@@ -416,7 +416,7 @@ class TrekTouristicEventViewSet(viewsets.ModelViewSet):
         if 'portal' in self.request.GET:
             queryset = queryset.filter(portal__name__in=self.request.GET['portal'].split(','))
 
-        return queryset.annotate(transform=Transform("geom", settings.API_SRID))
+        return queryset.annotate(api_geom=Transform("geom", settings.API_SRID))
 
 
 if 'geotrek.diving' in settings.INSTALLED_APPS:
@@ -449,7 +449,7 @@ if 'geotrek.diving' in settings.INSTALLED_APPS:
             if 'portal' in self.request.GET:
                 queryset = queryset.filter(portal__name__in=self.request.GET['portal'].split(','))
 
-            return queryset.annotate(transform=Transform("geom", settings.API_SRID))
+            return queryset.annotate(api_geom=Transform("geom", settings.API_SRID))
 
     class DiveTouristicEventViewSet(viewsets.ModelViewSet):
         model = TouristicEvent
@@ -473,7 +473,7 @@ if 'geotrek.diving' in settings.INSTALLED_APPS:
                 queryset = queryset.filter(source__name__in=self.request.GET['source'].split(','))
             if 'portal' in self.request.GET:
                 queryset = queryset.filter(portal__name__in=self.request.GET['portal'].split(','))
-            return queryset.annotate(transform=Transform("geom", settings.API_SRID))
+            return queryset.annotate(api_geom=Transform("geom", settings.API_SRID))
 
 
 class TouristicCategoryView(APIView):
