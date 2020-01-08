@@ -8,6 +8,9 @@ ENV POSTGRES_PORT="5432"
 ENV POSTGRES_USER="geotrek"
 ENV POSTGRES_PASSWORD="geotrek"
 ENV POSTGRES_DB="geotrekdb"
+ENV REDIS_HOST="redis"
+ENV CONVERSION_HOST="convertit"
+ENV CAPTURE_HOST="screamshotter"
 ENV CUSTOM_SETTINGS_FILE="/app/src/var/conf/custom.py"
 
 WORKDIR /app/src
@@ -36,7 +39,9 @@ RUN apt-get update && apt-get install -y \
 
 COPY requirements.txt requirements.txt
 RUN python3 -m venv env
+RUN env/bin/pip install --upgrade pip==19.3.1
 RUN env/bin/pip install --no-cache-dir -r requirements.txt
+RUN env/bin/pip install --no-cache-dir gdal==2.2.4 --global-option=build_ext --global-option="-I/usr/include/gdal/"
 
 COPY geotrek/ geotrek/
 COPY manage.py manage.py
