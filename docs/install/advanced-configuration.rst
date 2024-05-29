@@ -736,6 +736,21 @@ POI
 
         500
 
+Import from shapefile
+'''''''''''''''''''''''
+
+In user interface, in the top-right menu, go to Imports and choose "Données à importer depuis un fichier local"
+then click on "Import POI ".
+
+.. note::
+  The file must be a zip containing all the shapefile extensions (.shp, .shx, .prj, .dbf, .cpg)
+
+.. figure:: ../images/advanced-configuration/import_poi_shapefile.png
+   :alt: Import shapefile in user interface
+   :align: center
+
+   Import shapefile in user interface
+
 Diving
 ~~~~~~
 
@@ -868,22 +883,6 @@ On command line, run
 .. code-block:: bash
 
     sudo geotrek import geotrek.sensitivity.parsers.BiodivParser
-
-
-Import from shapefile
-'''''''''''''''''''''''
-
-In user interface, in the top-right menu, go to Imports and choose "Shapefile zone sensible espèce"
-or "Shapefile zone sensible réglementaire".
-
-.. note::
-  The file must be a zip containing all the shapefile extensions (.shp, .shx, .prj, .dbf, .cpg)
-
-.. figure:: ../images/advanced-configuration/import_shapefile.png
-   :alt: Import shapefile in user interface
-   :align: center
-
-   Import shapefile in user interface
 
 
 On command line, run:
